@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/whitegradient"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="280dp"
+            android:orientation="horizontal"
+            >
+            <simplicity_an.simplicity_an.FeedImageView
+                android:id="@+id/feedImage1"
+                android:layout_marginTop="1dp"
+                android:drawingCacheQuality="low"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+
+                android:scaleType="fitXY"
+                android:visibility="visible" />
+
+        </LinearLayout>
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/whitegradient">
+
+            <TextView
+                android:id="@+id/viewitem_typetwo_title"
+                android:layout_width="fill_parent"
+                android:maxLines="2"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:ellipsize="end"
+                android:textSize="17sp"
+                android:paddingRight="10dp"
+                android:layout_marginLeft="10dp"
+                />
+            <TextView
+                android:id="@+id/viewitem_typetwo_location"
+                android:layout_width="fill_parent"
+                android:layout_below="@+id/viewitem_typetwo_title"
+                android:maxLines="2"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:ellipsize="end"
+                android:textSize="14sp"
+                android:paddingRight="10dp"
+                android:layout_marginLeft="10dp"
+                />
+            <TextView
+                android:id="@+id/viewitem_typetwo_date"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewitem_typetwo_location"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="6dp"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

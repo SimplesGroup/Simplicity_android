@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+    android:id="@+id/version_main_layout"
+    android:layout_gravity="center_horizontal"
+android:background="@drawable/healthandliving"
+    >
+
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginRight="10dp"
+    android:paddingBottom="40dp"
+    android:background="@drawable/healthandliving"
+    android:layout_marginLeft="10dp"
+    android:id="@+id/root_coordinator"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways">
+            <Spinner
+                android:layout_marginTop="40dp"
+                android:id="@+id/my_spinnerhealthy"
+                style="@android:style/Widget.Spinner.DropDown"
+                android:popupBackground="@drawable/healthandliving"
+                android:background="@android:color/transparent"
+                android:dropDownVerticalOffset="56dp"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:spinnerMode="dropdown"
+                android:layout_gravity="center"
+                />
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/pick_itemhealthy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="100dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:clipToPadding="false"/>
+
+
+</android.support.design.widget.CoordinatorLayout>
+
+
+<LinearLayout android:id="@+id/footer"
+    android:layout_width="fill_parent"
+    android:layout_height="45dp"
+    android:orientation="horizontal"
+    android:background="#FF000000"
+
+    android:layout_alignParentBottom="true">
+    <ImageButton android:id="@+id/btn_1"
+        android:layout_marginRight="1dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/back"
+        android:background="@android:color/transparent"
+        android:gravity="center_horizontal"
+        android:layout_weight="1"
+        />
+
+    <ImageButton android:id="@+id/btn_2"
+        android:layout_margin="1dp"
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/fav"
+        android:gravity="center_horizontal"
+        />
+    <ImageButton android:id="@+id/btn_3"
+        android:layout_margin="1dp"
+
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+       android:src="@drawable/menutwo"
+        android:gravity="center_horizontal" />
+    <ImageButton android:id="@+id/btn_4"
+        android:layout_margin="1dp"
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/search"
+        android:gravity="center_horizontal"
+        />
+    <ImageButton android:id="@+id/btn_5"
+        android:layout_margin="1dp"
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/notify"
+        android:gravity="center_horizontal"
+        />
+</LinearLayout>
+
+</RelativeLayout>

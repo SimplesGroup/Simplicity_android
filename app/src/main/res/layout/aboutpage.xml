@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:background="@drawable/citycenterbg"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <RelativeLayout
+                android:layout_marginBottom="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_below="@+id/footerline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="19dp"
+                    android:textColor="@android:color/white"
+                    android:textAlignment="center"
+
+                    android:id="@+id/about_title" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="1dp"
+                    android:id="@+id/footerline2"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/about_title"
+                    >
+                    <View
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/gradient"
+                        android:layout_height="2dp"
+                        ></View>
+                </LinearLayout>
+                <WebView
+                    android:layout_below="@+id/footerline2"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:id="@+id/about_detail"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content">
+
+                </WebView>
+            </RelativeLayout>
+
+
+        </ScrollView>
+    <LinearLayout android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="62dp"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:background="#FF000000"
+
+        android:layout_alignParentBottom="true">
+        <ImageButton android:id="@+id/btn_articleback"
+            android:layout_marginRight="1dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/backwithtext"
+            android:background="@drawable/buttonselector"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            />
+        <ImageButton android:id="@+id/btn_citycenter"
+            android:layout_margin="1dp"
+            android:background="@drawable/buttonselector"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/events"
+            android:gravity="center_horizontal"
+            />
+        <ImageButton android:id="@+id/btn_home"
+
+
+            android:background="@drawable/buttonselector"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/search"
+            android:gravity="center_horizontal" />
+        <ImageButton android:id="@+id/btn_entertainment"
+            android:layout_margin="1dp"
+            android:background="@drawable/buttonselector"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+           android:src="@mipmap/specials"
+            android:gravity="center_horizontal"
+            />
+        <ImageButton android:id="@+id/btn_notifications"
+            android:layout_margin="1dp"
+            android:background="@drawable/buttonselector"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/more"
+            android:gravity="center_horizontal"
+            />
+    </LinearLayout>
+    </RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/whitegradient"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/categories_list_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:layout_alignParentTop="true"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:gravity="top|center_horizontal"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/name"
+                android:layout_below="@+id/categories_list_name"
+                android:textColor="@color/white"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:paddingRight="8dp"
+                android:visibility="gone"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/timestamp"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_below="@+id/name"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

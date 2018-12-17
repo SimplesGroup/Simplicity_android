@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:paddingLeft="10dp" >
+
+                <TextView
+                    android:id="@+id/sports_category_nameslist"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/whitegradient"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/white"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:paddingRight="8dp"
+                    android:maxLines="2"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:id="@+id/imageView_arrrow"
+
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:foregroundGravity="center"
+                    android:layout_marginRight="03dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/rightarrows"
+                    android:padding="1dp" />
+                <TextView
+                    android:id="@+id/title_trophy_names"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="fill_parent"
+                    android:layout_below="@+id/sports_category_nameslist"
+                    android:maxLines="2"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:ellipsize="end"
+                    android:textSize="15sp"
+                    android:paddingRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    />
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/title_trophy_names"
+                android:background="@color/whitegradient"
+                android:paddingLeft="10dp" >
+                <TextView
+                    android:id="@+id/teamnameone"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="10dp"
+                    />
+                <TextView
+                    android:id="@+id/teamnameone_score"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_toRightOf="@+id/teamnameone"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:textSize="10sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/teamnametwo"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/teamnameone"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="8dp"
+                    />
+                <TextView
+                    android:id="@+id/teamnametwo_score"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_below="@+id/teamnameone_score"
+                    android:layout_toRightOf="@+id/teamnametwo"
+                    android:gravity="right"
+                    android:layout_alignParentRight="true"
+                    android:textSize="10sp"
+                    android:layout_marginRight="10dp"
+                    />
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

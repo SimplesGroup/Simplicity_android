@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginRight="5dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/whitegradient"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal"
+            >
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/feedImage1"
+                android:layout_marginTop="1dp"
+                android:drawingCacheQuality="low"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+
+                android:scaleType="fitXY"
+                android:visibility="visible" />
+
+        </LinearLayout>
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/whitegradient">
+
+            <TextView
+                android:id="@+id/viewitem_typetwo_title"
+                android:layout_width="fill_parent"
+                android:maxLines="2"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:ellipsize="end"
+                android:textSize="17sp"
+                android:paddingRight="10dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:id="@+id/viewitem_typetwo_date"
+                android:layout_marginBottom="6dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewitem_typetwo_title"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:layout_marginLeft="8dp"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

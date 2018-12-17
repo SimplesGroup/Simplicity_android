@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/version_main_layout"
+    android:background="@drawable/musicbg"
+    >
+
+
+    <android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:paddingBottom="40dp"
+        android:background="@drawable/musicbg"
+        android:id="@+id/root_coordinator"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                app:contentScrim="?attr/colorPrimary"
+                app:layout_scrollFlags="scroll|enterAlways">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:textSize="30sp"
+                    android:fitsSystemWindows="true"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:id="@+id/radioplay_title" />
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_scrollFlags="scroll|enterAlways">
+
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+        </android.support.design.widget.AppBarLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/radioplay_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:clipToPadding="false"/>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+    <LinearLayout    xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="#FF000000"
+        android:orientation="horizontal"
+
+        android:layout_alignParentBottom="true">
+
+        <ImageButton android:id="@+id/btn_radioplayback"
+            android:layout_marginTop="30dp"
+            android:layout_margin="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/back"
+            android:background="@drawable/buttonselector"
+            android:gravity="center"
+            android:layout_weight="1"
+            />
+
+        <ImageButton
+            android:layout_margin="1dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/buttonselector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/favplaylist"
+            android:gravity="center"
+            />
+        <ImageButton android:id="@+id/btn_radioplayhome"
+            android:layout_margin="1dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/buttonselector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/menutwo"
+            android:gravity="center" />
+        <ImageButton
+            android:layout_margin="1dp"
+            android:layout_marginTop="30dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/buttonselector"
+            android:src="@drawable/commenttwo"
+            android:gravity="center"
+            />
+        <ImageButton
+            android:layout_margin="1dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/buttonselector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+           android:src="@mipmap/share"
+            android:gravity="center"
+            />
+
+
+
+    </LinearLayout>
+</RelativeLayout>

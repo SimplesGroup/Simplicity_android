@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainenglish"
+    android:background="@android:color/black"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".MainEnglish.MainPageEnglish">
+    <RelativeLayout
+
+        android:layout_above="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+
+            android:id="@+id/frame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:animateLayoutChanges="true">
+
+        </FrameLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+
+            <fragment
+
+                android:layout_alignParentBottom="true"
+                android:name="simplicity_an.simplicity_an.MusicplayerBottom"
+                android:layout_width="match_parent"
+                android:id="@+id/musicbottomplayer"
+                tools:layout="@layout/musicbottomplayer"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+            </fragment>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginBottom="0dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <ImageView android:id="@+id/btn_citys"
+            android:src="@mipmap/cityfooterlogo"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="72dp"
+            />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/footer"
+        android:layout_width="match_parent"
+
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true">
+
+        <Button android:id="@+id/btn_news"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:background="@android:color/transparent"
+            android:text="News"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+
+            android:textSize="12dp"
+            android:layout_height="42dp"
+            android:layout_centerInParent="true"/>
+
+
+
+    <Button android:id="@+id/btn_events"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
+        android:background="@android:color/transparent"
+        android:text="Events"
+        android:textSize="12dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="42dp"
+        android:layout_centerInParent="true" />
+
+
+
+
+        <ImageView
+            android:background="@android:color/transparent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="45dp"
+            android:layout_centerInParent="true" />
+
+
+
+        <Button android:id="@+id/btn_specials"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:background="@android:color/transparent"
+            android:text="Specials"
+            android:textSize="12dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="42dp"
+            android:layout_centerInParent="true"
+            />
+
+
+            <Button android:id="@+id/btn_shop"
+                android:textColor="@android:color/white"
+                android:textAllCaps="false"
+                android:background="@android:color/transparent"
+                android:text="Settings"
+                android:textSize="12dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="42dp"
+                android:layout_centerInParent="true"
+
+                />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#aa000000"
+        android:visibility="invisible">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="161dp"
+            android:background="@android:color/transparent"
+            android:padding="25dp">
+
+            <ImageView
+                android:id="@+id/ivInstruction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="36dp"
+                android:clickable="false"
+                android:minHeight="60dp"
+                android:minWidth="60dp"
+                android:paddingLeft="20dip"
+                android:scaleType="center"
+                android:src="@mipmap/instructiondownblack" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center_horizontal"
+                android:paddingRight="40dp"
+                android:text="Click Here for audios &amp; videos"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="15dp"
+
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/relativeLayout"
+            android:layout_alignBottom="@+id/relativeLayout"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="56dp"
+            android:background="@android:color/transparent"
+            android:padding="25dp">
+
+            <ImageView
+                android:id="@+id/ivInstruction1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView2"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="13dp"
+                android:clickable="false"
+                android:minHeight="60dp"
+                android:minWidth="60dp"
+                android:paddingLeft="20dip"
+                android:scaleType="center"
+                android:src="@mipmap/instructiondownblack" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center_horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="0dp"
+                android:text="Click Here for Events"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="15dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/relativeLayout"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="100dp"
+            android:background="@android:color/transparent"
+            android:paddingBottom="25dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="0dp"
+            android:paddingTop="25dp">
+
+            <ImageView
+                android:id="@+id/ivInstruction2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/textView3"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="13dp"
+                android:clickable="false"
+                android:minHeight="60dp"
+                android:minWidth="60dp"
+                android:paddingLeft="0dp"
+                android:scaleType="center"
+                android:src="@mipmap/instructiondownblack" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="142dp"
+                android:gravity="center_horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:text="Click Here for Events"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="15dp" />
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/ivInstruction3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/relativeLayout3"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="27dp"
+            android:layout_marginTop="111dp"
+            android:clickable="false"
+            android:minHeight="60dp"
+            android:minWidth="60dp"
+            android:paddingLeft="0dp"
+            android:scaleType="center"
+            android:src="@mipmap/instructionupblack" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView5"
+            android:layout_alignBottom="@+id/textView5"
+            android:layout_alignEnd="@+id/ivInstruction3"
+            android:gravity="center_horizontal"
+            android:paddingBottom="0dp"
+            android:paddingLeft="0dp"
+            android:text="Click Here to select language"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/ivInstruction4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/ivInstruction3"
+            android:layout_alignTop="@+id/ivInstruction3"
+            android:layout_marginStart="38dp"
+            android:clickable="false"
+            android:minHeight="60dp"
+            android:minWidth="60dp"
+            android:paddingLeft="0dp"
+            android:scaleType="center"
+            android:src="@mipmap/instructionupblack" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/ivInstruction4"
+            android:layout_below="@+id/ivInstruction3"
+            android:gravity="center_horizontal"
+            android:paddingBottom="0dp"
+            android:paddingLeft="0dp"
+            android:text="Click Here to select color theme"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/gotit"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/relativeLayout5"
+            android:layout_marginBottom="35dp"
+            android:layout_toStartOf="@+id/textView5"
+            android:background="@color/theme1button"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:paddingLeft="0dp"
+            android:text="GOT IT"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

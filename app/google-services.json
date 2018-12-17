@@ -1,0 +1,37 @@
+{
+  "project_info": {
+    "project_number": "534790179677",
+    "firebase_url": "https://pushnotifications-1168.firebaseio.com",
+    "project_id": "pushnotifications-1168",
+    "storage_bucket": "pushnotifications-1168.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:534790179677:android:b874dcd2ab592c49",
+        "android_client_info": {
+          "package_name": "simplicity_an.simplicity_an"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChc3pZR8SNUjSgUjIUPVqCg4CdLB3m3Rk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

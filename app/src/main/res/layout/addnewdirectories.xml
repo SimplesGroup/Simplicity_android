@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/directoriesbg">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scroll"
+        >
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:paddingBottom="80dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:textAlignment="center"
+                android:text="POST YOUR EVENTS"
+                android:textColor="@color/white"
+                android:id="@+id/add_post_your_newbusiness"
+                android:textSize="25dp"
+                android:layout_centerHorizontal="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:textColor="@android:color/white"
+                    android:padding="10dp"
+                    android:background="@drawable/editextfieldcolor"
+                    android:hint="Name"
+                    android:textColorHint="@android:color/white"
+                    android:id="@+id/add_newbusiness_name"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:textColor="@android:color/white"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/editextfieldcolor"
+                    android:hint="Category"
+                    android:focusableInTouchMode="false"
+                    android:textColorHint="@android:color/white"
+                    android:id="@+id/add_newbusiness_category"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:textColor="@android:color/white"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/whitegradient"
+                    android:hint="address"
+                    android:textColorHint="@android:color/white"
+                    android:id="@+id/add_newbusiness_address"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:textColor="@android:color/white"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/whitegradient"
+                    android:hint="area"
+                    android:textColorHint="@android:color/white"
+                    android:id="@+id/add_newbusiness_area"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:textColor="@android:color/white"
+                    android:padding="10dp"
+                    android:focusableInTouchMode="false"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/whitegradient"
+                    android:hint="phone"
+                    android:textColorHint="@android:color/white"
+                    android:id="@+id/add_newbusiness_phone"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:textColor="@android:color/white"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/whitegradient"
+                    android:hint="Landline"
+                    android:focusableInTouchMode="false"
+                    android:textColorHint="@android:color/white"
+                    android:id="@+id/add_newbusiness_landline"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:textColor="@android:color/white"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/whitegradient"
+                    android:hint="Email"
+                    android:textColorHint="@android:color/white"
+                    android:id="@+id/add_newbusiness_contactemail"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:textColor="@android:color/white"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/whitegradient"
+                    android:hint="Website"
+                    android:textColorHint="@android:color/white"
+                    android:id="@+id/add_newbusiness_contactwebsite"
+                    android:layout_height="wrap_content" />
+
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:padding="5dp"
+                        android:id="@+id/add_newevent_postevent"
+                        android:textAlignment="center"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@android:color/white"
+                        android:background="@color/whitegradient"
+                        android:textAllCaps="false"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout    xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="#FF000000"
+        android:orientation="horizontal"
+
+        android:layout_alignParentBottom="true">
+
+        <ImageButton android:id="@+id/btn_1"
+            android:layout_marginTop="30dp"
+            android:layout_margin="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/back"
+            android:background="@drawable/buttonselector"
+            android:gravity="center"
+            android:layout_weight="1"
+            />
+
+        <ImageButton android:id="@+id/btn_2"
+            android:layout_margin="1dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/buttonselector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/addnewevent"
+            android:gravity="center"
+            />
+        <ImageButton android:id="@+id/btn_3"
+            android:layout_margin="1dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/buttonselector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/menutwo"
+            android:gravity="center" />
+        <ImageButton android:id="@+id/btn_4"
+            android:layout_margin="1dp"
+            android:layout_marginTop="30dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/buttonselector"
+            android:src="@drawable/search"
+            android:gravity="center"
+            />
+        <ImageButton android:id="@+id/btn_5"
+            android:layout_margin="1dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/buttonselector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+           android:src="@mipmap/share"
+            android:gravity="center"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

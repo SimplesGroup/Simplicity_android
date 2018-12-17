@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/citycenterbg"
+
+    android:layout_height="wrap_content">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/close_button"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <Button
+            android:layout_weight=".10"
+            android:layout_width="0dp"
+            android:id="@+id/close_button_sign"
+
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:textAlignment="center"
+            android:layout_alignParentTop="true"
+            android:minWidth="60dp"
+            android:text="Close"
+            android:background="@color/whitegradient"
+            android:textColor="@android:color/white"
+
+            android:layout_height="30dp" />
+        </LinearLayout>
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_below="@+id/close_button"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <TextView
+
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:id="@+id/signinorligin"
+            android:textSize="18dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:text="Sign In/Login"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_below="@+id/signinorligin"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:id="@+id/logintimeprocess"
+            android:textSize="14dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:text="It takes less than a minute and we don't store your passwords. Sign in with confidence "
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:id="@+id/facebooklayout"
+            android:layout_width="match_parent"
+            android:layout_marginTop="40dp"
+
+            android:layout_marginRight="35dp"
+            android:layout_marginLeft="35dp"
+            android:layout_below="@+id/logintimeprocess"
+            android:background="@color/whitegradient"
+            android:padding="3dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+
+    android:background="@android:color/transparent"
+    android:src="@drawable/fbimg"
+    android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                android:id="@+id/facebooklogin"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:text=" Sign In using Facebook"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <TextView
+            android:layout_below="@+id/facebooklayout"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/or"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:text="Or"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:id="@+id/gmaillayout"
+            android:layout_width="match_parent"
+            android:layout_marginTop="40dp"
+
+            android:layout_marginRight="35dp"
+            android:layout_marginLeft="35dp"
+            android:layout_below="@+id/or"
+            android:background="@color/whitegradient"
+            android:padding="3dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+
+                android:background="@android:color/transparent"
+                android:src="@drawable/gmailimg"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                android:id="@+id/gmaillogin"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:text=" Sign In using Google"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <TextView
+            android:layout_below="@+id/gmaillayout"
+            android:id="@+id/extrafeature"
+            android:layout_marginTop="40dp"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:text="Extra Features available for signed in customers "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/extrafeature"
+            android:textAlignment="center"
+            android:textSize="14dp"
+            android:textColor="@android:color/white"
+            android:text="Set your language preference,  Change Themes,
+Save articles to read later, Like and Comment on articles"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content" />
+            </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>

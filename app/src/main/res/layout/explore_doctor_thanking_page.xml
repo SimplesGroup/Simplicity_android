@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/citycenterbg"
+    android:id="@+id/main_layout_explore"
+    android:layout_height="match_parent">
+    <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:id="@+id/title_text"
+                android:textAlignment="center"
+
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:textSize="25sp"
+                android:layout_height="wrap_content" />
+               <TextView
+                   android:layout_below="@+id/title_text"
+                   android:layout_width="match_parent"
+                   android:id="@+id/title_text_extra"
+                   android:textAlignment="center"
+                   android:textColor="@android:color/white"
+                   android:textSize="17sp"
+                   android:layout_height="wrap_content" />
+
+
+
+
+
+    <LinearLayout android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="#FF000000"
+
+        android:layout_alignParentBottom="true">
+        <ImageButton android:id="@+id/btn_ex_back"
+            android:layout_marginRight="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:src="@mipmap/back"
+            android:background="@drawable/buttonselector"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            />
+
+        <ImageButton android:id="@+id/btn_ex_happening"
+            android:layout_margin="1dp"
+            android:background="@drawable/buttonselector"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/star"
+            android:gravity="center_horizontal"
+            />
+        <ImageButton android:id="@+id/btn_ex_search"
+            android:layout_margin="1dp"
+
+            android:background="@drawable/buttonselector"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/menu"
+            android:gravity="center_horizontal" />
+        <ImageButton android:id="@+id/btn_ex_entertainment"
+            android:layout_margin="1dp"
+            android:background="@drawable/buttonselector"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/searchexplore"
+            android:gravity="center_horizontal"
+            />
+
+        <ImageButton android:id="@+id/btn_ex_more"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonselector"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/settings"
+            android:gravity="center_horizontal"
+            />
+
+
+    </LinearLayout>
+</RelativeLayout>

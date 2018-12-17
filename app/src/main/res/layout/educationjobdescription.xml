@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:paddingBottom="50dp"
+    android:id="@+id/version_main_layout"
+    android:layout_height="match_parent">
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="fill_vertical"
+        android:layout_marginBottom="?attr/actionBarSize"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_marginTop="5dip"
+            android:baselineAligned="true"
+            android:orientation="horizontal" >
+
+
+            <WebView
+                android:layout_width="match_parent"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/webView_jobdescription" />
+
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/webView_jobdescription"
+                android:layout_alignParentLeft="true"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:background="@color/whitefood"
+                android:id="@+id/jobtype_label"
+                android:text="Job Type "/>
+            <TextView
+                android:layout_width="210dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textAlignment="center"
+                android:layout_below="@+id/webView_jobdescription"
+                android:layout_toRightOf="@+id/jobtype_label"
+                android:textColor="@android:color/white"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:background="@color/whitefood"
+                android:id="@+id/jobcategory_label"
+                />
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/jobtype_label"
+                android:layout_alignParentLeft="true"
+                android:textColor="@android:color/white"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:textAlignment="center"
+                android:paddingRight="3dp"
+                android:background="@color/whitefood"
+                android:id="@+id/salary_label"
+                android:text="Salary "/>
+            <TextView
+                android:layout_width="210dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textAlignment="center"
+                android:layout_toRightOf="@+id/salary_label"
+                android:layout_below="@+id/jobcategory_label"
+                android:textColor="@android:color/white"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:paddingRight="3dp"
+                android:background="@color/whitefood"
+                android:id="@+id/salary_amount"
+                />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textAlignment="center"
+                android:layout_below="@+id/salary_label"
+                android:textColor="@android:color/white"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:background="@color/whitefood"
+                android:id="@+id/candidate_profile"
+                android:text="Desired Candidate Profile "/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@android:color/white"
+                android:layout_below="@+id/candidate_profile"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:id="@+id/candidate_profiledetails"
+                />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/candidate_profiledetails"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:background="@color/whitefood"
+                android:id="@+id/venue"
+                android:text="Venue "/>
+            <WebView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/venue"
+                android:id="@+id/webView_venuedetails" />
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

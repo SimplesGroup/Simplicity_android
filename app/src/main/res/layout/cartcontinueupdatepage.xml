@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/citycenterbg"
+    android:id="@+id/main_layout_explore"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:id="@+id/city_title"
+                android:textColor="@android:color/white"
+                android:textAlignment="center"
+                android:textSize="28dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_marginTop="20dp"
+
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+
+                    android:id="@+id/your_delivery_location_title"
+                    android:textColor="@android:color/white"
+
+                    android:textSize="17sp"
+                    android:layout_width="0dp"
+                    android:layout_weight=".70"
+                    android:layout_height="wrap_content" />
+                <TextView
+
+                    android:id="@+id/your_delivery_location_change"
+                    android:textColor="@android:color/white"
+                    android:textAlignment="center"
+                    android:textSize="17sp"
+                    android:background="@color/whitefood"
+                    android:padding="5dp"
+                    android:gravity="center|center_horizontal"
+                    android:layout_width="0dp"
+                    android:layout_weight=".30"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+<LinearLayout
+    android:layout_marginTop="10dp"
+
+    android:background="@color/whitefood"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+android:layout_marginTop="10dp"
+        android:id="@+id/explore_user_delivery_name"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/explore_user_delivery_address"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="1dp"
+        android:id="@+id/explore_user_delivery_address_continue"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:background="@color/whitefood"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:id="@+id/your_delivery_location_addmoreproducts"
+                    android:textColor="@android:color/white"
+                    android:gravity="center|center_horizontal"
+                    android:textAlignment="center"
+                    android:textSize="17sp"
+                    android:layout_width="0dp"
+                    android:layout_weight=".50"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_margin="5dp"
+                    android:id="@+id/your_delivery_location_backtocart"
+                    android:textColor="@android:color/white"
+                    android:textAlignment="center"
+                    android:textSize="17sp"
+                    android:background="@color/whitefood"
+                    android:padding="5dp"
+                    android:gravity="center|center_horizontal"
+                    android:layout_width="0dp"
+                    android:layout_weight=".50"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:id="@+id/cart_layout"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+
+        android:layout_above="@+id/footer">
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/mycart_textview"
+            android:layout_gravity="left"
+            android:gravity="start|center|center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/black"
+
+            android:layout_weight=".33"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:id="@+id/buynow_textview"
+
+            android:layout_marginRight="15dp"
+            android:gravity="end|center|center_horizontal"
+            android:layout_gravity="left"
+            android:layout_weight=".33"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+</RelativeLayout>

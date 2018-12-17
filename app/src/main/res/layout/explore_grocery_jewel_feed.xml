@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/jewelorgrocery_layout"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_marginBottom="7dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<com.android.volley.toolbox.NetworkImageView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="170dp"
+    android:maxHeight="170dp"
+    android:id="@+id/product_image"
+
+    />
+    <TextView
+        android:id="@+id/product_title"
+        android:background="@color/whitefood"
+        android:padding="4dp"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

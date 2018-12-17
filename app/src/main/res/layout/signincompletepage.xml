@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/citycenterbg"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/simplicityname_signin"
+            android:textSize="30dp"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:layout_marginTop="40dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/justfewsteps_signin"
+            android:textSize="18dp"
+            android:textColor="@android:color/white"
+
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/usernamesignin"
+            android:hint="User name"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:textColorHint="#e7e4e4"
+            android:textColor="@android:color/white"
+            android:background="@color/whitegradient"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:textColorHint="#e7e4e4"
+            android:textColor="@android:color/white"
+            android:background="@color/whitegradient"
+
+            android:id="@+id/emailsignin"
+
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:inputType="number"
+            android:textColorHint="#e7e4e4"
+            android:textColor="@android:color/white"
+            android:background="@color/whitegradient"
+            android:id="@+id/phonesignin"
+            android:hint="Phone number"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:id="@+id/area_zipcode"
+            android:layout_width="match_parent"
+            android:background="@color/whitegradient"
+            android:layout_height="50dp"
+            android:spinnerMode="dropdown"
+            android:popupBackground="@drawable/citycenterbg"
+            android:dropDownVerticalOffset="56dp"
+            android:layout_gravity="center_horizontal"
+            />
+        <Spinner
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:id="@+id/profession_signin"
+            android:layout_width="match_parent"
+            android:background="@color/whitegradient"
+            android:layout_height="50dp"
+            android:spinnerMode="dropdown"
+            android:popupBackground="@drawable/citycenterbg"
+            android:dropDownVerticalOffset="56dp"
+            android:layout_gravity="center_horizontal"
+            />
+        <Spinner
+            android:layout_marginTop="10dp"
+            android:id="@+id/gender"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:background="@color/whitegradient"
+            android:layout_height="50dp"
+            android:spinnerMode="dropdown"
+            android:popupBackground="@drawable/citycenterbg"
+            android:dropDownVerticalOffset="56dp"
+            android:layout_gravity="center_horizontal"
+            />
+        <Spinner
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:background="@color/whitegradient"
+
+            android:layout_height="50dp"
+            android:spinnerMode="dropdown"
+            android:popupBackground="@drawable/citycenterbg"
+            android:dropDownVerticalOffset="56dp"
+            android:layout_gravity="center_horizontal"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:buttonTint="@android:color/white"
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/holo_red_dark"
+            android:text="Accept our Terms,Privacy policy"
+            android:id="@+id/radio_accept_terms"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:orientation="horizontal"
+
+
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_margin="5dp"
+                android:text="CANCEL"
+                android:textColor="@android:color/white"
+                android:id="@+id/cancel_button_signin"
+                android:background="@color/whitefood"
+                android:textAlignment="center"
+                />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/cancel_button_signin"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="SUBMIT"
+            android:layout_marginRight="50dp"
+            android:textColor="@android:color/white"
+            android:layout_margin="5dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/submit_button_signin"
+            android:background="@color/whitefood"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</ScrollView>

@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/version_main_layout"
+    android:background="@drawable/eventsbg"
+    >
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scroll"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingBottom="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:layout_marginTop="20dp"
+                android:textSize="14sp"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:id="@+id/textView_qtypename" />
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:textAlignment="center"
+                android:lineSpacingExtra="-10dp"
+                android:id="@+id/textView_titlename" />
+
+
+            <RelativeLayout
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/photo_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:maxHeight="350dp"
+                    android:adjustViewBounds="true" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_marginTop="5dip"
+                android:baselineAligned="true"
+                android:orientation="vertical" >
+
+
+                <WebView
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/webView_jobdescription" />
+                <LinearLayout
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:minHeight="32dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".25"
+                        android:textSize="13sp"
+                        android:layout_below="@+id/webView_jobdescription"
+                        android:layout_alignParentLeft="true"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"
+                        android:padding="7dp"
+                        android:layout_margin="5dp"
+                        android:background="@color/whiteevent"
+                        android:id="@+id/jobtype_label"
+                        android:text="Job Type "/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight=".75"
+                        android:minHeight="32dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:textAlignment="center"
+                        android:layout_below="@+id/webView_jobdescription"
+                        android:layout_toRightOf="@+id/jobtype_label"
+                        android:textColor="@android:color/white"
+                        android:layout_margin="5dp"
+                        android:padding="7dp"
+                        android:background="@color/whiteevent"
+                        android:id="@+id/jobcategory_label"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/salary_layout"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight=".25"
+                        android:minHeight="32dp"
+                        android:textSize="13sp"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_below="@+id/jobtype_label"
+                        android:layout_alignParentLeft="true"
+                        android:textColor="@android:color/white"
+                        android:padding="7dp"
+                        android:layout_margin="5dp"
+                        android:textAlignment="center"
+                        android:background="@color/whiteevent"
+                        android:id="@+id/salary_label"
+                        android:text="Salary "/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight=".75"
+                        android:minHeight="32dp"
+                        android:textSize="13sp"
+                        android:layout_height="wrap_content"
+
+                        android:textAlignment="center"
+                        android:layout_toRightOf="@+id/salary_label"
+                        android:layout_below="@+id/jobcategory_label"
+                        android:textColor="@android:color/white"
+                        android:padding="7dp"
+                        android:layout_margin="5dp"
+
+                        android:background="@color/whiteevent"
+                        android:id="@+id/salary_amount"
+                        />
+                </LinearLayout>
+                <LinearLayout
+
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:minHeight="32dp"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_below="@+id/salary_layout"
+                    android:textColor="@android:color/white"
+                    android:layout_margin="5dp"
+                    android:padding="7dp"
+                    android:background="@color/whiteevent"
+                    android:id="@+id/candidate_profile"
+                    android:text="Desired Candidate Profile "/>
+                    </LinearLayout>
+                <LinearLayout
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/white"
+                        android:padding="5dp"
+                        android:id="@+id/candidate_profiledetails"
+                        />
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/white"
+
+                        android:padding="5dp"
+                        android:id="@+id/candidate_profile_education"
+                        />
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/white"
+                        android:layout_below="@+id/candidate_profile_education"
+                        android:padding="5dp"
+                        android:id="@+id/candidate_profile_skillls"
+                        />
+                </LinearLayout>
+                <LinearLayout
+
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:minHeight="32dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:padding="7dp"
+                    android:background="@color/whiteevent"
+                    android:id="@+id/Walkininterview_label_i"
+                    android:text="Walkin Interview "/>
+                    </LinearLayout>
+                <LinearLayout
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight=".25"
+                        android:textSize="13sp"
+                        android:minHeight="32dp"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"
+                        android:padding="7dp"
+                        android:textStyle="bold"
+                        android:layout_margin="5dp"
+                        android:background="@color/whiteevent"
+                        android:id="@+id/inertviewdate"
+                        android:text="Date "/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight=".75"
+                        android:minHeight="32dp"
+                        android:textSize="13sp"
+                        android:layout_height="wrap_content"
+
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"
+                        android:layout_margin="5dp"
+                        android:padding="7dp"
+                        android:background="@color/whiteevent"
+                        android:id="@+id/inertviewdate_data"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight=".25"
+                        android:textSize="13sp"
+                        android:minHeight="32dp"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"
+                        android:padding="7dp"
+                        android:layout_margin="5dp"
+                        android:textStyle="bold"
+                        android:background="@color/whiteevent"
+                        android:id="@+id/interviewtiming"
+                        android:text="Timing "/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight=".75"
+                        android:minHeight="32dp"
+                        android:textSize="13sp"
+                        android:layout_height="wrap_content"
+
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"
+                        android:layout_margin="5dp"
+                        android:padding="7dp"
+                        android:background="@color/whiteevent"
+                        android:id="@+id/interviewtiming_data"
+                        />
+                </LinearLayout>
+                <LinearLayout
+
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:minHeight="32dp"
+                    android:textSize="13sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:background="@color/whiteevent"
+                    android:id="@+id/venue"
+                    android:text="Venue "/>
+                    </LinearLayout>
+                <WebView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="11dp"
+                    android:layout_below="@+id/venue"
+                    android:id="@+id/webView_venuedetails" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/source"
+                    android:layout_below="@+id/webView_venuedetails"
+                    android:baselineAligned="true"
+                    android:orientation="horizontal" >
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@android:color/white"
+                        android:id="@+id/emaillabel"
+                        android:visibility="gone"
+                        android:padding="8dp"
+                        android:text="Email this job to yourself or a friend :"/>
+                    <EditText
+                        android:layout_width="200dp"
+                        android:layout_height="50dp"
+                        android:visibility="gone"
+                        android:layout_below="@+id/emaillabel"
+                        android:layout_margin="10dp"
+                        android:padding="10dp"
+                        android:hint="Email address"
+                        android:background="@color/whitefood"
+                        android:imeOptions="actionDone"
+                        android:inputType="textImeMultiLine"
+
+                        android:minHeight="75dp"
+                        android:id="@+id/email"/>
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:textColor="@android:color/white"
+                        android:textAlignment="center"
+                        android:visibility="gone"
+                        android:layout_margin="10dp"
+                        android:padding="10dp"
+                        android:background="@color/whitefood"
+                        android:layout_below="@+id/emaillabel"
+                        android:layout_toRightOf="@+id/email"
+                        android:text="Send"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_marginTop="5dip"
+                android:baselineAligned="true"
+                android:orientation="horizontal" >
+            <WebView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="11dp"
+                android:id="@+id/webView_info_employee"
+                android:paddingBottom="15dp"/>
+            <WebView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="11dp"
+                android:layout_below="@+id/webView_info_employee"
+                android:id="@+id/webView_info_venue"
+                android:paddingBottom="15dp"/>
+            <TextView
+                android:layout_below="@+id/webView_info_venue"
+                android:id="@+id/phonenumber"
+                android:layout_marginLeft="20dp"
+                android:textSize="15dp"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/commentbox_city"
+        android:background="#FF000000"
+        android:layout_height="45dp">
+        <LinearLayout
+            android:layout_marginLeft="4dp"
+            android:layout_weight=".52"
+            android:layout_width="0dp"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+            <ImageButton android:id="@+id/btn_back"
+                android:layout_weight="0.13"
+                android:layout_margin="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/back"
+                android:background="@drawable/buttonselector"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+
+                />
+
+            <ImageButton android:id="@+id/btn_like"
+                android:layout_margin="1dp"
+                android:layout_weight="0.13"
+                android:background="@drawable/buttonselector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="heart"
+                android:src="@mipmap/like"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+
+                />
+            <ImageButton android:id="@+id/btn_share"
+                android:layout_margin="1dp"
+                android:layout_weight="0.13"
+                android:background="@drawable/buttonselector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:src="@mipmap/share"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight=".48"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_width="0dp"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+            <Button
+                android:layout_marginTop="3dp"
+                android:layout_weight=".40"
+                android:textColor="@android:color/white"
+                android:paddingLeft="7dp"
+                android:textSize="15sp"
+                android:layout_margin="2dp"
+                android:text="Apply Now"
+                android:textColorHint="#666666"
+                android:layout_width="0dp"
+                android:id="@+id/applynow_button"
+                android:imeOptions="normal"
+                android:inputType="textImeMultiLine"
+                android:background="@drawable/editextbox"
+                android:layout_height="match_parent"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

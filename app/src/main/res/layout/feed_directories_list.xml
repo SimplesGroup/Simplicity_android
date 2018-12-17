@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whitegradient"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                >
+                <TextView
+                    android:id="@+id/title_directories"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/street_directories"
+                    android:layout_below="@+id/title_directories"
+                    android:textColor="@color/white"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:paddingRight="8dp"
+                    android:layout_marginTop="06dp"
+                    android:textSize="15sp"
+                    />
+
+                <TextView
+                    android:id="@+id/city_directories"
+
+                    android:layout_width="fill_parent"
+                    android:layout_below="@+id/street_directories"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/state_contry_postcode_directories"
+                    android:layout_width="fill_parent"
+                    android:layout_below="@+id/city_directories"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/phone_directories"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/state_contry_postcode_directories"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/landline_directories"
+                    android:layout_width="fill_parent"
+                    android:layout_below="@+id/phone_directories"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/email_directories"
+                    android:layout_width="fill_parent"
+                    android:layout_below="@+id/landline_directories"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/calldir"
+                    android:gravity="right"
+                    android:id="@+id/call"
+                    />
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/call"
+                    android:layout_marginRight="10dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/webdir"
+                    android:gravity="right"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/getdirection"
+                   />
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

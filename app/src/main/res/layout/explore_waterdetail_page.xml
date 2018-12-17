@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/citycenterbg"
+    android:id="@+id/main_layout_explore"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_above="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingBottom="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:background="@color/whitefood"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_weight=".45"
+                    android:layout_width="0dp"
+                    android:maxHeight="250dp"
+                    android:layout_height="wrap_content" >
+
+                    <com.android.volley.toolbox.NetworkImageView
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/explore_productdetail_productimage"
+                        android:layout_width="fill_parent"
+                        android:maxHeight="250dp"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight=".55"
+                    android:layout_width="0dp"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="20dp"
+                        android:maxLines="1"
+                        android:gravity="center|center_vertical|center_horizontal"
+                        android:id="@+id/explore_waterdetail_advanceamount"
+                        android:textColor="@android:color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="2dp"
+                        android:maxLines="1"
+                        android:id="@+id/explore_waterdetail_quantity"
+                        android:textColor="@android:color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_marginTop="2dp"
+                        android:maxLines="1"
+                        android:layout_marginLeft="4dp"
+                        android:textSize="16dp"
+                        android:layout_marginBottom="4dp"
+                        android:id="@+id/explore_waterdetail_refilprice"
+                        android:textColor="@android:color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </LinearLayout>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/whitefood"
+    android:layout_marginTop="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="5dp"
+                android:maxLines="1"
+
+                android:id="@+id/explore_waterdetail_orderdate"
+                android:textColor="@android:color/white"
+                android:layout_width="0dp"
+                android:layout_weight=".30"
+                android:layout_height="wrap_content" />
+            <Spinner
+                android:spinnerMode="dialog"
+                android:layout_weight=".70"
+                android:background="@drawable/spinnerborderbox"
+                android:layout_marginRight="12dp"
+                android:minHeight="37dp"
+                android:layout_marginTop="5dp"
+
+                android:id="@+id/explore_waterdetail_spinner_price"
+                android:layout_width="0dp"
+                android:layout_height="37dp" />
+            </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="2dp"
+                android:maxLines="1"
+                android:layout_weight=".30"
+                android:text="fgssa"
+                android:id="@+id/explore_waterdetail_ortertype"
+                android:textColor="@android:color/white"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <RadioGroup
+                android:layout_weight=".70"
+                android:id="@+id/radiogroup"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New"
+                    android:checked="false"
+                    android:buttonTint="@color/colorAccent"
+                    android:textColor="@android:color/white"
+                   />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:checked="false"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorAccent"
+                    android:textColor="@android:color/white"
+                    android:text="Refill"
+                   />
+            </RadioGroup>
+            </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="2dp"
+                android:maxLines="1"
+                android:layout_marginLeft="4dp"
+                android:textSize="16dp"
+                android:text="fgssa"
+                android:layout_weight=".30"
+                android:layout_marginBottom="4dp"
+                android:id="@+id/explore_waterdetail_deliverytime"
+                android:textColor="@android:color/white"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:spinnerMode="dialog"
+                android:layout_weight=".70"
+                android:background="@drawable/spinnerborderbox"
+
+                android:minHeight="37dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="12dp"
+                android:id="@+id/explore_waterdetail_spinner_deliverytime"
+                android:layout_width="0dp"
+                android:layout_height="37dp" />
+            </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="2dp"
+                android:maxLines="1"
+                android:layout_marginLeft="4dp"
+                android:textSize="16dp"
+                android:text="fgssa"
+                android:layout_weight=".30"
+                android:layout_marginBottom="4dp"
+                android:id="@+id/explore_waterdetail_orderqty"
+                android:textColor="@android:color/white"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <Spinner
+                android:spinnerMode="dialog"
+                android:layout_weight=".70"
+                android:background="@drawable/spinnerborderbox"
+
+                android:minHeight="37dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="12dp"
+                android:id="@+id/explore_waterdetail_spinner_orderqty"
+                android:layout_width="0dp"
+                android:layout_height="37dp" />
+            </LinearLayout>
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <Button
+                android:layout_marginTop="4dp"
+                android:background="#555"
+                android:textAllCaps="false"
+                android:layout_margin="4dp"
+                android:layout_weight=".50"
+                android:textColor="@android:color/white"
+                android:id="@+id/buynow_jewel_detail_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <Button
+                android:layout_marginTop="4dp"
+                android:layout_margin="4dp"
+                android:textAllCaps="false"
+                android:layout_weight=".50"
+                android:background="#555"
+                android:textColor="@android:color/white"
+                android:id="@+id/bookappoinment_jewel_detail_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:id="@+id/cart_layout"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+
+        android:layout_above="@+id/footer">
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/mycart_textview"
+            android:layout_gravity="end"
+            android:gravity="end|center|center_horizontal"
+
+            android:textColor="@android:color/black"
+            android:text="MY CART"
+            android:layout_weight=".33"
+            android:layout_height="fill_parent" />
+        <RelativeLayout
+            android:gravity="center|center_horizontal"
+            android:layout_centerInParent="true"
+            android:layout_width="0dp"
+            android:layout_weight=".33"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/cart_main_count"
+                android:minWidth="25dp"
+
+                android:minHeight="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:layout_centerInParent="true"
+                android:text="0"
+                android:background="@drawable/batgetext"
+                android:gravity="center"
+                android:shadowColor="@android:color/white"
+                android:shadowRadius="10.0"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"/>
+        </RelativeLayout>
+        <TextView
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:id="@+id/buynow_textview"
+            android:text="BUY NOW"
+            android:gravity="start|center|center_horizontal"
+            android:layout_gravity="left"
+            android:layout_weight=".33"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="#FF000000"
+
+        android:layout_alignParentBottom="true">
+        <ImageButton android:id="@+id/btn_ex_back"
+            android:layout_marginRight="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:src="@mipmap/back"
+            android:background="@drawable/buttonselector"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            />
+
+        <ImageButton android:id="@+id/btn_ex_happening"
+            android:layout_margin="1dp"
+            android:background="@drawable/buttonselector"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/star"
+            android:gravity="center_horizontal"
+            />
+        <ImageButton android:id="@+id/btn_ex_search"
+            android:layout_margin="1dp"
+
+            android:background="@drawable/buttonselector"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/menu"
+            android:gravity="center_horizontal" />
+        <ImageButton android:id="@+id/btn_ex_entertainment"
+            android:layout_margin="1dp"
+            android:background="@drawable/buttonselector"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/searchexplore"
+            android:gravity="center_horizontal"
+            />
+        <RelativeLayout
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <ImageButton android:id="@+id/btn_ex_more"
+                android:layout_margin="1dp"
+                android:background="@drawable/buttonselector"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/settings"
+                android:gravity="center_horizontal"
+                />
+            <TextView
+                android:id="@+id/text_batchvalue_main"
+                android:minWidth="20dp"
+                android:visibility="gone"
+                android:minHeight="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_alignTop="@id/btn_artcileprofile"
+                android:layout_centerInParent="true"
+                android:layout_alignRight="@id/btn_artcileprofile"
+                android:background="@drawable/batgetext"
+                android:gravity="center"
+                android:shadowColor="@android:color/white"
+                android:shadowRadius="10.0"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

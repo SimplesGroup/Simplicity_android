@@ -1,0 +1,931 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="simplicity_an.simplicity_an">
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+
+   
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <permission
+        android:name="simplicity_an.simplicity_an.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="simplicity_an.simplicity_an.permission.C2D_MESSAGE" />
+
+
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:name=".AppControllers"
+        android:largeHeap="true"
+        android:hardwareAccelerated="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/cityicon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/cityiconround"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+        <meta-data android:name="com.onesignal.NotificationOpened.DEFAULT" android:value="DISABLE" />
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/Splash"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@string/app_name"
+            android:name=".Walkthrough.Aboutapp"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".Walkthrough.LocationSelection"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".Walkthrough.LanguageSelection"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".Walkthrough.ThemeSelection"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".Walkthrough.FontSelection"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".PaymentGateway.InitialScreenActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".PaymentGateway.WebViewActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".PaymentGateway.StatusActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".Columnistdetail"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".Tamil.Activity.Columnistdetailtamil"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".Columnsdetailpage"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".AdvertorialDescription"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".MainEnglish.MainPageEnglish"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".MainTamil.MainPageTamil"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:hardwareAccelerated="true"
+            android:label="@string/app_name"
+            android:name=".YoutubeVideoPlayer"
+            >
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".PhotoStoriesDetail"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".Explore.DoctorOnCallMain"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".Explore.Doctorthankingpage"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".Explore.DoctorPatientDetails"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".Explore.Doctorpatientaddressandtiming"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".Explore.ExploreSettings"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".MusicPlayer.RadioNotificationplayer"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".SimplicitySearchviews"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        <activity android:name=".Tamil.Activity.CustomizeNotificationTamil"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".AdvertisementPage"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".LifestyleDetail"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:label="@string/app_name"
+            android:name=".AdvertisementPageweb"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity android:name=".Tamil.Activity.AdvertisementPageTamil"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Explore.MobileDetailPage"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".EventsVersionTwo"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Tamil.Activity.TamilEventsVersionTwo"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".CustomizeNotification"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Explore.SearchPage"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ReportNewsOrComplaints"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Tamil.Activity.ReportNewsOrComplaintsTamil"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Explore.ExploreMain"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Explore.GroceryPage"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Explore.ProductListPage"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Explore.ProductDetailpage"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Explore.Milkpage"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Explore.JewelleryListPage"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Explore.JewelleryDetailPage"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Explore.WaterListPage"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Explore.WaterDetailPage"
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".Explore.WeddingCategory"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Explore.MarriageDecorater"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Explore.WeddingServices"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Explore.WeddingShops"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Explore.WeddingVenueDetail"
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Explore.Weddingdairiesdetail"
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Explore.WeddingServicelistPage"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Explore.WeddingServicesDetailPage"
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Explore.WeddingShopslIst"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Explore.WreddingShopsDetail"
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Explore.RentalsMainPage"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Explore.RentalsListPage"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Explore.RentalDetailPage"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Explore.RentalsRecordListPage"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Explore.CartListPage"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Explore.RentalsRecordDetail"
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".Explore.UpdateAddress"
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Explore.CartContinueUpdateAddress"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Explore.CartallshippingAddress"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Explore.SelectPaymentPage"
+
+            android:screenOrientation="portrait"/>
+        <activity android:name=".NotificationSettingsactivity"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".RadioJockeyDetailpage"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Radiojockeyplayer"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".AboutPage"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MainActivityVersiontwo"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".Tamil.TamilBeyond"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Tamil.TamilEntertainment"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name="simplicity_an.simplicity_an.Tamil.TamilArticleoftheday"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name="simplicity_an.simplicity_an.Tamil.TamilArticledescription"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name="simplicity_an.simplicity_an.Tamil.Activity.NewsActivityTamil"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name="simplicity_an.simplicity_an.Tamil.Activity.TamilNewsDescription"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name="simplicity_an.simplicity_an.Tamil.Activity.TamilNewsSearchview"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name="simplicity_an.simplicity_an.Tamil.Activity.TamilEvents"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name="simplicity_an.simplicity_an.Tamil.Activity.TamilEventsDescription"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name="simplicity_an.simplicity_an.Tamil.Activity.TamilEventSearchview"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name="simplicity_an.simplicity_an.Tamil.Activity.TamilSports"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name="simplicity_an.simplicity_an.Tamil.Activity.TamilSportsnewsDescription"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name="simplicity_an.simplicity_an.Tamil.Activity.TamilSportssearchview"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name="simplicity_an.simplicity_an.Tamil.Activity.TamilSportsScoreDetailPage"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name="simplicity_an.simplicity_an.Tamil.Activity.GovernmentNotificationstamil"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name="simplicity_an.simplicity_an.Tamil.Activity.Govtdescriptiontamil"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name="simplicity_an.simplicity_an.Tamil.Activity.Govtsearchviewtamil"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name="simplicity_an.simplicity_an.Tamil.Activity.JobApplyPagetamil"
+            android:windowSoftInputMode="adjustResize"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name="simplicity_an.simplicity_an.Tamil.Activity.JobsActivitytamil"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name="simplicity_an.simplicity_an.Tamil.Activity.JobsDetailPagetamil"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name="simplicity_an.simplicity_an.Tamil.Activity.JobsSearchviewtamil"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name="simplicity_an.simplicity_an.Tamil.Activity.ScienceandTechnologytamil"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name="simplicity_an.simplicity_an.Tamil.Activity.ScienceandTechnologyDescriptiontamil"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name="simplicity_an.simplicity_an.Tamil.Activity.ScienceSearchviewtamil"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name="simplicity_an.simplicity_an.Tamil.Activity.DoitDescriptiontamil"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name="simplicity_an.simplicity_an.Tamil.Activity.Educationtamil"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name="simplicity_an.simplicity_an.Tamil.Activity.EducationDescriptiontamil"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name="simplicity_an.simplicity_an.Tamil.Activity.EducationInstitutionsDescriptiontamil"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name="simplicity_an.simplicity_an.Tamil.Activity.EducationInternshipDescriptiontamil"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name="simplicity_an.simplicity_an.Tamil.Activity.EducationLearningDescriptiontamil"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name="simplicity_an.simplicity_an.Tamil.Activity.HealthAndLivingtamil"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name="simplicity_an.simplicity_an.Tamil.Activity.Healthdescriptiontamil"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name="simplicity_an.simplicity_an.Tamil.Activity.HealthSearchviewtamil"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name="simplicity_an.simplicity_an.Tamil.Activity.FarmingAgricultureActivitytamil"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name="simplicity_an.simplicity_an.Tamil.Activity.Farmingdescriptiontamil"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name="simplicity_an.simplicity_an.Tamil.Activity.FarmingSeachviewtamil"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="simplicity_an.simplicity_an.Tamil.Activity.FoodActivityTamil"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Tamil.Activity.FoodAndCookDescriptionPagetamil"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name="simplicity_an.simplicity_an.Tamil.Activity.FoodSearchviewTamil"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name="simplicity_an.simplicity_an.Tamil.Activity.TipsDescriptionTamil"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name="simplicity_an.simplicity_an.Tamil.Activity.TravelsActivitytamil"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name="simplicity_an.simplicity_an.Tamil.Activity.TravelSearchviewtamil"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name="simplicity_an.simplicity_an.Tamil.Activity.TravelsDescriptiontamil"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name="simplicity_an.simplicity_an.Tamil.Activity.MainActivityoldtamil"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="simplicity_an.simplicity_an.Tamil.Activity.Articlesearchviewtamil"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Settings"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".SavedArticle"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".WelcomeActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Tamil.Activity.SavedArticleTamil"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Contactpage"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".PrivacyPolicy"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".TermsandCondition"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".OurTeamPage"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".AddNewEvent"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".AddnewDirectories"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Radioplayeractivity"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Enternainment"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".EducationInstitutionsDescription"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".EntertainmentVersiontwo"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".DirectoriesServiceItemSubCategory"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".DirectoriesSubitemDetaillist"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".DirectoriesSearchview"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".JobsDetailPage"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".FoodAndCookDescriptionPage"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".FoodCategoryPage"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".TipsDescription"
+            android:launchMode="singleTop"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".JobsActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".SigninpageActivity"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".FaceBooklogin"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".SigninComplete"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".Articledescription"
+            android:launchMode="singleTop"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="adjustResize"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MainActivity"
+            android:windowSoftInputMode="adjustPan"
+
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".FoodActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Articleoftheday"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".JobApplyPage"
+            android:windowSoftInputMode="adjustResize"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".FarmingAgricultureActivity"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Farmingdescription"
+            android:launchMode="singleTop"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".FarmingSeachview"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".NewsActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".NewsDescription"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".NewsSourceLinkPage"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".NewsSearchview"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".HealthAndLiving"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".HealthycategoryPage"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Healthylivingdescription"
+            android:launchMode="singleTop"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".GovernmentNotifications"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".GovernmentnotificationsDescriptions"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".Events"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".EventsDescription"
+            android:launchMode="singleTop"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".EventSearchview"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ArticleSourceLinkPage"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Articlesearchview"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Education"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".EducationDescription"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".EducationLearningDescription"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".EducationInternshipDescription"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".DoitDescription"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ScienceandTechnology"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ScienceandTechnologyDescription"
+            android:configChanges="orientation"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Directories"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".DirectoriesItemListActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Theatre"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Sports"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".SportsnewsDescription"
+            android:launchMode="singleTop"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Sportssearchview"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".SportsScoreDetailPage"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".TravelsActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".TravelsDescription"
+            android:launchMode="singleTop"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".RadioActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".RadioPlaylist"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Radioplayerfavplaylist"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".RadioPlayerPage"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".RadioprogramsInnerpage"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".BeyondActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".TheatreItemDetail"/>
+        <activity android:name=".MusicActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Musicplayerpage"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity android:name=".MusicnewReleaseplayer"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Musicfavlist"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Musicfavplayerpage"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity android:name=".MusicnewRealeaseDetailpage"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Govtsearchview"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ScienceSearchview"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity android:name=".FoodSearchview"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity android:name=".HealthSearchview"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity android:name=".DoitSearchview"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity android:name=".TravelSearchview"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity android:name=".SimplicitySearchview"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity android:name=".JobsSearchview"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity android:name=".PhotoStories"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity android:name=".GoogleSignintwo"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <!--
+                <receiver
+                    android:name="com.google.android.gms.gcm.GcmReceiver"
+                    android:exported="true"
+                    android:permission="com.google.android.c2dm.permission.SEND">
+                    <intent-filter>
+                        <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                        <category android:name="simplicity_an.simplicity_an"/>
+                    </intent-filter>
+                </receiver>
+
+
+                    GCM Receiver Service
+
+                <service android:name=".GCMPushReceiverService" android:exported="false">
+                    <intent-filter>
+                        <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                    </intent-filter>
+                </service> -->
+
+        <!--
+            GCM Registration Intent Service
+        -->
+        <!--  <service android:name=".GCMRegistrationIntentService" android:exported="false">
+             <intent-filter>
+                 <action android:name="com.google.android.gms.iid.InstanceID"/>
+             </intent-filter>
+         </service>  -->
+        <service
+            android:name=".NotificationExtenderExample"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.onesignal.NotificationExtender" />
+            </intent-filter>
+        </service>
+        <service android:name=".MusicPlayer.BackgroundAudioService">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+                <action android:name="android.media.AUDIO_BECOMING_NOISY" />
+                <action android:name="android.media.browse.MediaBrowserService" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name="android.support.v4.media.session.MediaButtonReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+                <action android:name="android.media.AUDIO_BECOMING_NOISY" />
+            </intent-filter>
+        </receiver>
+
+
+
+    </application>
+
+
+</manifest>

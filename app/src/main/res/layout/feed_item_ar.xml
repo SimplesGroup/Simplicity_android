@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <simplicity_an.simplicity_an.FeedImageView
+                android:id="@+id/feedImage_advertisement"
+                android:layout_marginTop="1dp"
+                android:drawingCacheQuality="low"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:background="@android:color/white"
+                android:scaleType="fitXY"
+                android:visibility="visible" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

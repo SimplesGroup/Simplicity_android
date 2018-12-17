@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@android:color/transparent</color>
+    <color name="colorPrimaryDark">@android:color/transparent</color>
+    <color name="colorAccent">@android:color/white</color>
+    <color name="mytransparent">#00000000 </color>
+    <color name="articlefooter">#EA5D4D</color>
+    <color name="Black">#FF000000</color>
+    <color name="white">#f2f2f2</color>
+    <color name="whitegradient">#0fffffff</color>
+    <color name="whitefood">#14ffffff</color>
+    <color name="whiteevent">#1effffff</color>
+    <color name="lightblue">#87b7d9</color>
+    <color name="wealthsource">#666666</color>
+    <color name="red">#f93030</color>
+    <color name="sourcelinkcolor">#EA5D4D</color>
+    <color name="searchviewhintcolor">#999797</color>
+    <color name="notificationcolor">#891703</color>
+    <color name="eventcolor">#B5FCFBFB</color>
+<color name="textfade">#CCCCCC</color>
+    <color name="input_register">#888888</color>
+    <color name="input_register_hint">#5e6266</color>
+    <color name="whitecolor">#ffffff</color>
+
+    <color name="theme1">#383838</color>
+    <color name="theme2">#59247c</color>
+    <color name="theme3">#1d487a</color>
+    <color name="theme4">#7A4100</color>
+    <color name="theme5">#6E0138</color>
+    <color name="theme6">#00BFD4</color>
+    <color name="theme7">#185546</color>
+    <color name="theme8">#D0A06F</color>
+    <color name="theme9">#82C6E6</color>
+    <color name="theme10">#339900</color>
+    <color name="theme11">#CC9C00</color>
+    <color name="theme12">#00B09B</color>
+    <color name="theme1button">#3096CF</color>
+    <color name="theme13">#ffffff</color>
+    <color name="gray">#e9e7e7</color>
+    <color name="grayback">#fffefe</color>
+    <color name="theme14">#FFFAF6F6</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#d1395c</color>
+    <color name="dot_dark_screen2">#14a895</color>
+    <color name="dot_dark_screen3">#2278d4</color>
+    <color name="dot_dark_screen4">#a854d4</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#f98da5</color>
+    <color name="dot_light_screen2">#8cf9eb</color>
+    <color name="dot_light_screen3">#93c6fd</color>
+    <color name="dot_light_screen4">#e4b5fc</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+
+    </array>
+</resources>

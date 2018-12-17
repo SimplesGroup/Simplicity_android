@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:background="@drawable/citycenterbg"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    >
+
+    <android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/root_coordinator"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:contentScrim="?attr/colorPrimary"
+                app:layout_scrollFlags="scroll|enterAlways">
+
+                <TextView
+                    android:layout_marginTop="40dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:textSize="28sp"
+                    android:fitsSystemWindows="true"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:id="@+id/toolbar_title_notification" />
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_scrollFlags="scroll|enterAlways">
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tab_layout"
+                    android:layout_marginTop="30dp"
+                    app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:tabMode="fixed"
+                    app:layout_collapseMode="pin"
+                    app:tabIndicatorColor="@android:color/white"
+                    app:tabSelectedTextColor="@android:color/white"
+                    app:tabTextColor="#EEE" />
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+        </android.support.design.widget.AppBarLayout>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_below="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+    <LinearLayout android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="#FF000000"
+
+        android:orientation="horizontal"
+
+
+        android:layout_alignParentBottom="true">
+        <ImageButton android:id="@+id/btn_musicback"
+            android:layout_marginRight="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/left"
+            android:background="@android:color/transparent"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            />
+
+        <ImageButton android:id="@+id/btn_musicfav"
+            android:layout_margin="1dp"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/fav"
+            android:gravity="center_horizontal"
+            />
+        <ImageButton android:id="@+id/btn_musichome"
+            android:layout_margin="1dp"
+
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+           android:src="@drawable/menutwo"
+            android:gravity="center_horizontal" />
+        <ImageButton android:id="@+id/btn_musicsearch"
+            android:layout_margin="1dp"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/search"
+            android:gravity="center_horizontal"
+            />
+        <ImageButton android:id="@+id/btn_musicprofile"
+            android:layout_margin="1dp"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/notify"
+            android:gravity="center_horizontal"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

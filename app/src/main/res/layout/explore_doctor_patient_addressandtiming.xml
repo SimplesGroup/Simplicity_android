@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/citycenterbg"
+    android:id="@+id/main_layout_explore"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="12dp">
+        <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:paddingBottom="70dp"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:id="@+id/patient_details"
+                android:background="#333333"
+                android:padding="7dp"
+                android:textStyle="bold"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@android:color/white"
+                android:textSize="17sp"
+                android:layout_height="wrap_content" />
+
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:id="@+id/patient_name"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:gravity="center|left"
+                android:hint="Name"
+                android:minHeight="40dp"
+                android:background="#333333"
+                android:textColorHint="#555"
+                android:textSize="14dp"
+                android:textColor="@android:color/white"
+                android:maxHeight="200dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:layout_marginTop="5dp"
+                android:id="@+id/patient_email"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:inputType="textEmailAddress"
+                android:gravity="center|left"
+                android:hint="Email"
+                android:minHeight="40dp"
+                android:background="#333333"
+                android:textColorHint="#555"
+                android:textSize="14dp"
+                android:textColor="@android:color/white"
+                android:maxHeight="200dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:layout_marginTop="5dp"
+                android:id="@+id/patient_mobile"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:gravity="center|left"
+                android:hint="Mobile"
+                android:inputType="phone"
+                android:minHeight="40dp"
+                android:background="#333333"
+                android:textColorHint="#555"
+                android:textSize="14dp"
+                android:textColor="@android:color/white"
+                android:maxHeight="200dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:layout_marginTop="5dp"
+                android:id="@+id/patient_age"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:maxLength="2"
+                android:inputType="number"
+                android:gravity="center|left"
+                android:hint="Age"
+                android:minHeight="40dp"
+                android:background="#333333"
+                android:textColorHint="#555"
+                android:textSize="14dp"
+                android:textColor="@android:color/white"
+                android:maxHeight="200dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:padding="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:background="#333333"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_weight=".30"
+                    android:id="@+id/patient_gender"
+                    android:text="gender"
+
+                    android:layout_gravity="center_vertical|center|center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:layout_height="wrap_content" />
+                <CheckBox
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/gender_male"
+                    android:layout_width="0dp"
+                    android:text="Male"
+                    android:textColor="@android:color/white"
+                    android:layout_weight=".35"
+                    android:layout_height="wrap_content" />
+                <CheckBox
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/gender_female"
+                    android:layout_width="0dp"
+                    android:text="Female"
+                    android:textColor="@android:color/white"
+                    android:layout_weight=".35"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/location"
+                android:padding="7dp"
+                android:background="#555"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_weight=".60"
+                    android:id="@+id/detect_my_locaion"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="left|center_vertical"
+
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:layout_height="wrap_content" />
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_weight=".40"
+                    android:gravity="right"
+                    android:background="@android:color/transparent"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <EditText
+                android:layout_marginTop="5dp"
+                android:id="@+id/patient_address_edit"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:gravity="top"
+                android:hint="fill your address"
+                android:minHeight="100dp"
+                android:background="#333333"
+                android:textColorHint="#555"
+                android:textSize="14dp"
+                android:textColor="@android:color/white"
+                android:maxHeight="200dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_marginTop="25dp"
+                android:layout_width="match_parent"
+                android:id="@+id/choose_prefered_time"
+                android:background="#333333"
+                android:padding="7dp"
+                android:textStyle="bold"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@android:color/white"
+                android:textSize="17sp"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="30dp"
+                android:descendantFocusability="blocksDescendants">
+                <android.support.v7.widget.RecyclerView
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_width="match_parent"
+                    android:id="@+id/doctoroncall_recylerview"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    android:clipToPadding="false"
+
+
+                    android:layout_height="wrap_content">
+
+
+                </android.support.v7.widget.RecyclerView>
+            </RelativeLayout>
+            <Button
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/Pay_fees_button"
+                android:minHeight="50dp"
+                android:background="#555"
+                android:textColor="@android:color/white"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="#FF000000"
+
+        android:layout_alignParentBottom="true">
+        <ImageButton android:id="@+id/btn_ex_back"
+            android:layout_marginRight="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:src="@mipmap/back"
+            android:background="@drawable/buttonselector"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            />
+
+        <ImageButton android:id="@+id/btn_ex_happening"
+            android:layout_margin="1dp"
+            android:background="@drawable/buttonselector"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/star"
+            android:gravity="center_horizontal"
+            />
+        <ImageButton android:id="@+id/btn_ex_search"
+            android:layout_margin="1dp"
+
+            android:background="@drawable/buttonselector"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/menu"
+            android:gravity="center_horizontal" />
+        <ImageButton android:id="@+id/btn_ex_entertainment"
+            android:layout_margin="1dp"
+            android:background="@drawable/buttonselector"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/searchexplore"
+            android:gravity="center_horizontal"
+            />
+
+        <ImageButton android:id="@+id/btn_ex_more"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonselector"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/settings"
+            android:gravity="center_horizontal"
+            />
+
+
+    </LinearLayout>
+</RelativeLayout>

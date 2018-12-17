@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="@drawable/jobsbg"
+    android:id="@+id/version_main_layout"
+    android:layout_height="fill_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="55dp"
+                android:layout_marginTop="40dp"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:background="@color/whitegradient"
+                android:id="@+id/titlelabel_apply" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/titlelabel_apply"
+                android:baselineAligned="true"
+                android:paddingBottom="50dp"
+                android:orientation="horizontal" >
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/detailslabel"
+                    android:paddingLeft="2dp"
+                    android:text="Fill in your details to apply :"/>
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/detailslabel"
+                    android:baselineAligned="true"
+                    android:orientation="vertical" >
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:minHeight="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:hint="Name"
+                        android:textColor="@android:color/white"
+                        android:paddingLeft="10dp"
+                        android:textColorHint="@color/whitefood"
+                        android:background="@color/whitefood" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                    <EditText
+                        android:layout_weight=".25"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/namelabel"
+                        android:layout_margin="5dp"
+                        android:hint="Age"
+                        android:paddingLeft="10dp"
+                        android:inputType="numberDecimal"
+                        android:maxLength="2"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@color/whitefood"
+                        android:minHeight="40dp"
+                        android:background="@color/whitefood" />
+                        <EditText
+                            android:layout_weight=".25"
+                            android:layout_width="0dp"
+                            android:minHeight="40dp"
+                            android:paddingLeft="10dp"
+                            android:hint="Gender"
+                            android:textColor="@android:color/white"
+                            android:textColorHint="@color/whitefood"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@color/whitefood" />
+                        <EditText
+                            android:layout_weight=".50"
+                            android:layout_width="0dp"
+                            android:minHeight="40dp"
+                            android:hint="Education"
+                            android:textColor="@android:color/white"
+                            android:paddingLeft="10dp"
+                            android:textColorHint="@color/whitefood"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@color/whitefood" />
+                        </LinearLayout>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="40dp"
+                        android:paddingLeft="10dp"
+                        android:layout_margin="5dp"
+                        android:textColor="@android:color/white"
+                        android:hint="Phone"
+                        android:textColorHint="@color/whitefood"
+                        android:inputType="numberDecimal"
+                        android:background="@color/whitefood" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="40dp"
+                        android:paddingLeft="10dp"
+                        android:layout_margin="5dp"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@android:color/white"
+                        android:hint="Email"
+                        android:textColorHint="@color/whitefood"
+                        android:background="@color/whitefood" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="40dp"
+                        android:paddingLeft="10dp"
+                        android:hint="Experince"
+                        android:textColorHint="@color/whitefood"
+                        android:imeOptions="actionNext"
+                        android:inputType="textImeMultiLine"
+                        android:layout_margin="5dp"
+                        android:textColor="@android:color/white"
+
+                        android:background="@color/whitefood" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="40dp"
+                        android:paddingLeft="10dp"
+                        android:layout_margin="5dp"
+                        android:imeOptions="actionNext"
+                        android:inputType="textImeMultiLine"
+                        android:hint="Current Employer"
+                        android:textColorHint="@color/whitefood"
+                        android:textColor="@android:color/white"
+                        android:background="@color/whitefood" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="40dp"
+                        android:hint="Current Salary"
+                        android:textColorHint="@color/whitefood"
+                        android:layout_margin="5dp"
+                        android:paddingLeft="10dp"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal"
+                        android:textColor="@android:color/white"
+                        android:background="@color/whitefood" />
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+                        <Button
+                            android:gravity="left"
+                            android:layout_alignParentLeft="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minHeight="40dp"
+                            android:textColor="@android:color/white"
+                            android:textAlignment="center"
+                            android:layout_margin="5dp"
+                            android:textAllCaps="false"
+                            android:padding="10dp"
+                            android:background="@color/whitefood"
+                            android:layout_below="@+id/resumename"
+                            android:id="@+id/choosefile"
+                            android:text="Choose file"/>
+                        <Button
+                            android:gravity="right"
+                            android:layout_marginRight="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minHeight="40dp"
+                            android:textColor="@android:color/white"
+                            android:layout_alignParentRight="true"
+                            android:textAlignment="center"
+                            android:layout_margin="5dp"
+                            android:padding="10dp"
+                            android:background="@color/whitefood"
+                            android:layout_below="@+id/resumename"
+                            android:id="@+id/submit"
+                            android:textAllCaps="false"
+                            android:layout_toRightOf="@+id/choosefile"
+                            android:text="Submit"/>
+</LinearLayout>
+                   </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <LinearLayout android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="#FF000000"
+        android:orientation="horizontal"
+
+        android:layout_alignParentBottom="true">
+        <ImageButton android:id="@+id/btn_1"
+            android:layout_marginRight="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/left"
+            android:background="@drawable/buttonselector"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            />
+
+        <ImageButton android:id="@+id/btn_2"
+            android:layout_margin="1dp"
+            android:background="@drawable/buttonselector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/fav"
+            android:gravity="center_horizontal"
+            />
+        <ImageButton android:id="@+id/btn_3"
+            android:layout_margin="1dp"
+
+            android:background="@drawable/buttonselector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+           android:src="@drawable/menutwo"
+            android:gravity="center_horizontal" />
+        <ImageButton android:id="@+id/btn_4"
+            android:layout_margin="1dp"
+            android:background="@drawable/buttonselector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/search"
+            android:gravity="center_horizontal"
+            />
+        <ImageButton android:id="@+id/btn_5"
+            android:layout_margin="1dp"
+            android:background="@drawable/buttonselector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/notify"
+            android:gravity="center_horizontal"
+            />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,443 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/citycenterbg"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_above="@+id/footer"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:paddingBottom="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/image"
+
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="35dp"
+                android:textSize="25dp"
+
+                android:layout_width="match_parent"
+                android:id="@+id/update_title"
+                android:layout_centerHorizontal="true"
+
+                android:textColor="@android:color/white"
+                android:textAlignment="center"
+                android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="1dp"
+            android:id="@+id/footerline_main"
+            android:orientation="horizontal"
+            android:layout_below="@+id/image"
+            >
+            <View
+                android:layout_width="wrap_content"
+                android:background="#53ffffff"
+                android:layout_height="1dp"
+                ></View>
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:textSize="17dp"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/footerline_main"
+            android:text="Science"
+            android:id="@+id/science_notification" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/science_switch"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/footerline_main"
+            android:layout_marginRight="10dp"
+            android:showText="true"
+            android:textColor="@android:color/white"
+           android:checked="true"
+            android:text="On"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="1dp"
+            android:id="@+id/footerline1"
+            android:orientation="horizontal"
+            android:layout_below="@+id/science_notification"
+            >
+            <View
+                android:layout_width="wrap_content"
+                android:background="#53ffffff"
+                android:layout_height="1dp"
+                ></View>
+        </LinearLayout>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="wrap_content"
+                android:textSize="17dp"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/footerline1"
+                android:text="Article"
+                android:id="@+id/article_notification" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/article_switch"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="16dp"
+                android:showText="true"
+                android:checked="true"
+                android:text="On"
+                android:textColor="@android:color/white"
+                android:layout_below="@+id/footerline1"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="1dp"
+                android:id="@+id/footerline2"
+                android:orientation="horizontal"
+                android:layout_below="@+id/article_notification"
+                >
+                <View
+                    android:layout_width="wrap_content"
+                    android:background="#53ffffff"
+                    android:layout_height="1dp"
+                    ></View>
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="wrap_content"
+                android:textSize="17dp"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/footerline2"
+                android:text="Sports"
+                android:id="@+id/sports_notification" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/sports_switch"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/footerline2"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="16dp"
+                android:showText="true"
+                android:text="On"
+                android:checked="true"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="1dp"
+                android:id="@+id/footerline3"
+                android:orientation="horizontal"
+                android:layout_below="@+id/sports_notification"
+                >
+                <View
+                    android:layout_width="wrap_content"
+                    android:background="#53ffffff"
+                    android:layout_height="1dp"
+                    ></View>
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="wrap_content"
+                android:textSize="17dp"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/footerline3"
+                android:text="Music"
+                android:id="@+id/music_notification" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/music_switch"
+                android:layout_marginRight="10dp"
+                android:showText="true"
+                android:checked="true"
+                android:text="On"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="16dp"
+                android:layout_below="@+id/footerline3"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="1dp"
+                android:id="@+id/footerline4"
+                android:orientation="horizontal"
+                android:layout_below="@+id/music_notification"
+                >
+                <View
+                    android:layout_width="wrap_content"
+                    android:background="#53ffffff"
+                    android:layout_height="1dp"
+                    ></View>
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="wrap_content"
+                android:textSize="17dp"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/footerline4"
+                android:text="Farming"
+                android:id="@+id/farming_notification" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/farming_switch"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/footerline4"
+                android:showText="true"
+                android:checked="true"
+                android:text="On"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="16dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="1dp"
+                android:id="@+id/footerline5"
+                android:orientation="horizontal"
+                android:layout_below="@+id/farming_notification"
+                >
+                <View
+                    android:layout_width="wrap_content"
+                    android:background="#53ffffff"
+                    android:layout_height="1dp"
+                    ></View>
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="wrap_content"
+                android:textSize="17dp"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/footerline5"
+                android:text="Food"
+                android:id="@+id/food_notification" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/food_switch"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/footerline5"
+                android:layout_alignParentRight="true"
+                android:showText="true"
+                android:checked="true"
+                android:text="On"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="1dp"
+                android:id="@+id/footerline6"
+                android:orientation="horizontal"
+                android:layout_below="@+id/food_notification"
+                >
+                <View
+                    android:layout_width="wrap_content"
+                    android:background="#53ffffff"
+                    android:layout_height="1dp"
+                    ></View>
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="wrap_content"
+                android:textSize="17dp"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/footerline6"
+                android:text="Health"
+                android:id="@+id/health_notification" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/health_switch"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/footerline6"
+                android:showText="true"
+                android:checked="true"
+                android:text="On"
+                android:textColor="@android:color/white"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="1dp"
+                android:id="@+id/footerline7"
+                android:orientation="horizontal"
+                android:layout_below="@+id/health_notification"
+                >
+                <View
+                    android:layout_width="wrap_content"
+                    android:background="#53ffffff"
+                    android:layout_height="1dp"
+                    ></View>
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="wrap_content"
+                android:textSize="17dp"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/footerline7"
+                android:text="Travel"
+                android:id="@+id/travel_notification" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/travel_switch"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="16dp"
+                android:showText="true"
+                android:checked="true"
+                android:text="On"
+                android:textColor="@android:color/white"
+                android:layout_below="@+id/footerline7"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="1dp"
+                android:id="@+id/footerline8"
+                android:orientation="horizontal"
+                android:layout_below="@+id/travel_notification"
+                >
+                <View
+                    android:layout_width="wrap_content"
+                    android:background="#53ffffff"
+                    android:layout_height="1dp"
+                    ></View>
+            </LinearLayout>
+        </RelativeLayout>
+        </android.support.v4.widget.NestedScrollView>
+    <LinearLayout android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="62dp"
+        android:orientation="horizontal"
+        android:background="#000000"
+
+        android:layout_alignParentBottom="true">
+        <ImageButton android:id="@+id/btn_back"
+            android:layout_marginRight="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:src="@mipmap/backwithtext"
+            android:background="@drawable/buttonselector"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            />
+
+        <ImageButton android:id="@+id/btn_happening"
+
+            android:background="@drawable/buttonselector"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/events"
+            android:gravity="center_horizontal"
+            />
+        <ImageButton android:id="@+id/btn_search"
+
+
+            android:background="@drawable/buttonselector"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/explore"
+            android:gravity="center_horizontal" />
+        <ImageButton android:id="@+id/btn_audio"
+
+            android:background="@drawable/buttonselector"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/specials"
+            android:gravity="center_horizontal"
+            />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content">
+            <ImageButton android:id="@+id/btn_more"
+
+                android:background="@drawable/buttonselector"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/more"
+                android:gravity="center_horizontal"
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

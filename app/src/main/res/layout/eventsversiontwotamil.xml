@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:background="@drawable/citycenterbg"
+    android:id="@+id/version_main_layout"
+    android:layout_height="fill_parent"
+    >
+
+    <android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/root_coordinator"
+        android:paddingBottom="40dp"
+        android:background="@android:color/transparent"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            app:elevation="0dp"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar_layout"
+                android:layout_width="match_parent"
+                app:layout_scrollFlags="scroll"
+                android:background="@android:color/transparent"
+                android:layout_height="wrap_content"
+                app:contentScrim="?attr/colorPrimary"
+                >
+                <LinearLayout
+                    android:orientation="vertical"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.android.volley.toolbox.NetworkImageView
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="25dp"
+                            android:layout_centerHorizontal="true"
+                            android:scaleType="centerCrop"
+                            android:adjustViewBounds="true"
+                            android:visibility="gone"
+                            android:layout_alignParentTop="true"
+                            android:id="@+id/special_day_images"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:id="@+id/title"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/special_day_images">
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="25sp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+
+                            android:id="@+id/title_versiontwo" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:paddingBottom="10dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_below="@+id/title"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight=".50"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_marginTop="3dp"
+                                android:layout_width="match_parent"
+                                android:id="@+id/date_versiontwo"
+                                android:gravity="right"
+                                android:layout_gravity="right"
+                                android:textColor="@android:color/white"
+                                android:textSize="12dp"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_weight=".50"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content">
+                            <TextView
+
+
+                                android:layout_width="wrap_content"
+                                android:id="@+id/weathercenter"
+
+                                android:layout_toLeftOf="@+id/weatherimage_versiontwo"
+                                android:textColor="@android:color/white"
+                                android:layout_height="wrap_content" />
+                            <ImageButton
+
+                                android:layout_width="wrap_content"
+                                android:id="@+id/weatherimage_versiontwo"
+                                android:layout_centerHorizontal="true"
+
+                                android:src="@drawable/weathernew"
+                                android:layout_marginBottom="5dp"
+                                android:background="@drawable/buttonselector"
+                                android:layout_height="wrap_content" />
+                            <TextView
+
+
+                                android:layout_width="wrap_content"
+                                android:id="@+id/weather_degree_versiontwo"
+                                android:layout_toRightOf="@+id/weatherimage_versiontwo"
+                                android:layout_marginLeft="4dp"
+                                android:textAlignment="center"
+                                android:textColor="@android:color/white"
+                                android:textSize="12dp"
+                                android:layout_height="wrap_content" />
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:id="@+id/language_versiontwo"
+                                android:layout_toRightOf="@+id/weather_degree_versiontwo"
+                                android:layout_marginLeft="4dp"
+                                android:textAlignment="center"
+
+                                android:textColor="@android:color/white"
+                                android:layout_centerHorizontal="true"
+                                android:textSize="12dp"
+                                android:layout_height="wrap_content" />
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:id="@+id/themebutton"
+                                android:layout_marginLeft="5dp"
+                                android:src="@drawable/theme"
+                                android:layout_toRightOf="@+id/language_versiontwo"
+                                android:background="@drawable/buttonselector"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.design.widget.CollapsingToolbarLayout>
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tab_layout"
+                    android:layout_marginTop="6dp"
+                    app:tabPaddingEnd="8dp"
+                    app:paddingStart="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:tabMinWidth="20dp"
+
+
+                    app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+                    app:tabGravity="fill"
+                    app:tabIndicatorColor="@android:color/white"
+                    app:tabSelectedTextColor="@android:color/white"
+                    app:tabTextColor="#70ffffff" />
+            </android.support.design.widget.CollapsingToolbarLayout>
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            />
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabsearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="90dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginRight="100dp"
+            android:visibility="invisible"
+            app:fabSize="mini"
+            app:elevation="6dp"
+            app:pressedTranslationZ="12dp"
+            android:src="@mipmap/search" />
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabinnerplus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="90dp"
+
+            android:layout_gravity="bottom|end"
+            android:layout_marginRight="60dp"
+            android:visibility="invisible"
+            app:elevation="6dp"
+            app:fabSize="mini"
+            app:pressedTranslationZ="12dp"
+            android:src="@mipmap/plus"/>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabButtonplus"
+            app:fabSize="mini"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="90dp"
+            android:src="@mipmap/plus"
+            app:borderWidth="0dp"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+
+            <fragment
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentBottom="true"
+                android:name="simplicity_an.simplicity_an.MusicplayerBottom"
+                android:layout_width="match_parent"
+                android:id="@+id/musicbottomplayer"
+                tools:layout="@layout/musicbottomplayer"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+            </fragment>
+        </RelativeLayout>
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+    <LinearLayout android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="62dp"
+        android:orientation="horizontal"
+        android:background="#000000"
+
+        android:layout_alignParentBottom="true">
+        <ImageButton android:id="@+id/btn_versiontwocity"
+            android:layout_marginRight="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:src="@mipmap/newstamil"
+            android:background="@drawable/buttonselector"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            />
+
+        <ImageButton android:id="@+id/btn_versiontwobeyond"
+
+            android:background="@drawable/buttonselector"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+           android:src="@mipmap/eventstamil"
+            android:gravity="center_horizontal"
+            />
+        <ImageButton android:id="@+id/btn_versiontwosearch"
+
+
+            android:background="@drawable/buttonselector"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/explore"
+            android:gravity="center_horizontal" />
+        <ImageButton android:id="@+id/btn_versiontwoexplore"
+
+            android:background="@drawable/buttonselector"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+           android:src="@mipmap/specials"
+            android:gravity="center_horizontal"
+            />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content">
+            <ImageButton android:id="@+id/btn_versiontwonotifications"
+
+                android:background="@drawable/buttonselector"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/moretamil"
+                android:gravity="center_horizontal"
+                />
+            <TextView
+                android:id="@+id/text_batchvalue_main"
+                android:minWidth="20dp"
+                android:minHeight="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_alignTop="@id/btn_versiontwonotifications"
+                android:layout_centerInParent="true"
+                android:layout_alignRight="@id/btn_versiontwonotifications"
+                android:background="@drawable/batgetext"
+                android:gravity="center"
+                android:shadowColor="@android:color/white"
+                android:shadowRadius="10.0"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+
+

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/citycenterbg"
+    android:id="@+id/main_layout_explore"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_marginTop="30dp"
+                android:id="@+id/city_title"
+                android:textColor="@android:color/white"
+                android:textAlignment="center"
+                android:textSize="28dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_marginTop="20dp"
+
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+
+                    android:id="@+id/your_delivery_location_title"
+                    android:textColor="@android:color/white"
+
+                    android:textSize="17sp"
+                    android:layout_width="0dp"
+                    android:layout_weight=".50"
+                    android:layout_height="wrap_content" />
+                <TextView
+
+                    android:id="@+id/your_delivery_backtocart"
+                    android:textColor="@android:color/white"
+                    android:textAlignment="center"
+                    android:textSize="17sp"
+                    android:background="@color/whitefood"
+                    android:padding="5dp"
+                    android:gravity="center|center_horizontal"
+                    android:layout_width="0dp"
+                    android:layout_weight=".50"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:background="@color/whitefood"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+
+                    android:orientation="vertical"
+                    android:layout_weight=".50"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/explore_user_delivery_type"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="10dp"
+                        android:textStyle="bold"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/explore_user_delivery_totalitems"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/explore_user_delivery_address_Delivarycharges"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight=".50"
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_marginTop="35dp"
+                        android:id="@+id/explore_user_delivery_totalitems_value"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp"
+                        android:gravity="end"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/explore_user_delivery_address_Delivarycharges_value"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp"
+                        android:gravity="end"
+                        android:layout_marginRight= "10dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                </LinearLayout>
+            <LinearLayout
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/white"/>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/explore_user_delivery_nettotal"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:gravity="left"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/explore_user_delivery_nettotal_value"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="right"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+</LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:background="@color/whitefood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/explore_user_delivery_payment_title"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/explore_user_delivery_payment_gateway"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <RadioButton
+                        android:layout_marginBottom="8dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:checked="true"
+                        android:buttonTint="@color/colorAccent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+
+                android:background="@color/whitefood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/explore_user_delivery_payment_option"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                    <Spinner
+                        android:layout_marginBottom="8dp"
+                        android:spinnerMode="dropdown"
+                        android:background="@drawable/spinnerborderbox"
+                        android:layout_marginRight="12dp"
+                        android:minHeight="37dp"
+                        android:layout_marginTop="5dp"
+                        android:popupBackground="#555"
+                        android:id="@+id/explore_payment_option_spinnner"
+                        android:layout_width="match_parent"
+                        android:layout_height="37dp" />
+            </LinearLayout>
+                </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:background="#555"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:id="@+id/your_delivery_placeorder"
+                    android:textColor="@android:color/white"
+                    android:gravity="center|center_horizontal"
+                    android:textAlignment="center"
+                    android:textSize="17sp"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/whitegradient"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <simplicity_an.simplicity_an.FeedImageView
+                android:id="@+id/feedImage1"
+                android:layout_marginTop="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:visibility="visible" />
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:paddingLeft="10dp" >
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/white"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:paddingRight="25dp"
+                    android:maxLength="40"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/timestamp"
+                    android:layout_width="fill_parent"
+                    android:paddingRight="25dp"
+                    android:layout_below="@+id/name"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:id="@+id/imageViewlitle"
+                    android:layout_below="@+id/timestamp"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:foregroundGravity="center"
+                    android:layout_marginRight="03dp"
+                    android:src="@drawable/fav"
+                    android:padding="1dp" />
+                <ImageView
+                    android:id="@+id/imageViewlitleone"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/timestamp"
+                    android:layout_marginTop="9dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:foregroundGravity="center"
+                    android:layout_marginRight="29dp"
+                   android:src="@mipmap/share"
+                    android:padding="1dp" />
+                <TextView
+                    android:id="@+id/jobdateweeks"
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageViewlitleone"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:gravity="right"
+                    android:foregroundGravity="center"
+                    android:layout_marginRight="12dp"
+                    />
+                <TextView
+                    android:id="@+id/location"
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/timestamp"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+
+                    android:gravity="left"
+                    android:foregroundGravity="center"
+
+                    />
+                <TextView
+                    android:id="@+id/experience"
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/location"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+
+                    android:gravity="left"
+                    android:foregroundGravity="center"
+
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/whitegradient">
+
+            <TextView
+                android:id="@+id/food_name"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:ellipsize="end"
+                android:maxLength="40"
+                android:textSize="15sp"
+                android:paddingRight="25dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:id="@+id/releaseYear"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/food_name"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:layout_marginLeft="8dp"
+                />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_below="@+id/releaseYear"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="9dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:foregroundGravity="center"
+                android:layout_marginRight="03dp"
+                android:src="@drawable/fav"
+                android:padding="1dp" />
+
+            <ImageView
+                android:id="@+id/imageViewone"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/releaseYear"
+                android:layout_marginTop="9dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:foregroundGravity="center"
+                android:layout_marginRight="29dp"
+               android:src="@mipmap/share"
+                android:padding="1dp" />
+            <TextView
+                android:id="@+id/jobdate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageViewone"
+                android:textColor="@color/white"
+                android:textSize="11sp"
+                android:gravity="right"
+                android:foregroundGravity="center"
+                android:layout_marginRight="16dp"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/job_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:gravity="center"
+            android:visibility="gone"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/about_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:gravity="center"
+            android:visibility="gone"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+
+            android:visibility="gone"
+
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/job_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:foregroundGravity="center"
+            android:visibility="gone"
+            android:gravity="center"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/education"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:foregroundGravity="center"
+            android:visibility="gone"
+            android:gravity="center"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/timing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:foregroundGravity="center"
+            android:visibility="gone"
+            android:gravity="center"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/salary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:foregroundGravity="center"
+            android:visibility="gone"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/keyskills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:foregroundGravity="center"
+            android:visibility="gone"
+            android:gravity="center"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/datesecondpage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:foregroundGravity="center"
+            android:visibility="gone"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

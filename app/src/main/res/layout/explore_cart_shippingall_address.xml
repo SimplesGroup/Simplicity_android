@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/citycenterbg"
+    android:id="@+id/main_layout_explore"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:id="@+id/city_title"
+                android:textColor="@android:color/white"
+                android:textAlignment="center"
+                android:textSize="28dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_marginTop="20dp"
+
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+
+                    android:id="@+id/your_delivery_location_title"
+                    android:textColor="@android:color/white"
+
+                    android:textSize="17sp"
+                    android:layout_width="0dp"
+                    android:layout_weight=".70"
+                    android:layout_height="wrap_content" />
+                <TextView
+
+                    android:id="@+id/your_delivery_location_change"
+                    android:textColor="@android:color/white"
+                    android:textAlignment="center"
+                    android:textSize="17sp"
+                    android:background="@color/whitefood"
+                    android:padding="5dp"
+                    android:gravity="center|center_horizontal"
+                    android:layout_width="0dp"
+                    android:layout_weight=".30"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="30dp"
+                android:descendantFocusability="blocksDescendants">
+                <android.support.v7.widget.RecyclerView
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_width="match_parent"
+                    android:id="@+id/expolre_category_recylerview"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    android:clipToPadding="false"
+                    android:scrollbars="vertical"
+
+                    android:layout_height="wrap_content">
+
+                </android.support.v7.widget.RecyclerView>
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="@color/whitefood"
+                android:layout_height="45dp">
+                <TextView
+                    android:id="@+id/explore_cartalladdress_back"
+                    android:textColor="@android:color/white"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textAlignment="center"
+                    android:gravity="center|center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:textSize="18dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

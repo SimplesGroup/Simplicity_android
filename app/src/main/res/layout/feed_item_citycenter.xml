@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitegradient"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="@dimen/feed_item_margin"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/feed_item_padding_left_right"
+            android:paddingRight="@dimen/feed_item_padding_left_right" >
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/profilePic"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:scaleType="fitCenter" >
+            </com.android.volley.toolbox.NetworkImageView>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/feed_item_profile_info_padd" >
+
+                <TextView
+                    android:id="@+id/name"
+                    android:textColor="@color/white"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/feed_item_profile_name"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/tagged_names"
+                    android:layout_below="@+id/name"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/red"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/feed_item_profile_name"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/timestamp"
+                    android:textColor="@color/white"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tagged_names"
+                    android:textSize="@dimen/feed_item_timestamp" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txtStatusMsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+
+                android:ellipsize="none"
+                android:paddingBottom="5dp"
+                android:paddingLeft="@dimen/feed_item_status_pad_left_right"
+                android:paddingRight="@dimen/feed_item_status_pad_left_right"
+                android:paddingTop="5dp" />
+            <TextView
+                android:id="@+id/description_readmore"
+                android:layout_below="@+id/txtStatusMsg"
+                android:textSize="14dp"
+                android:paddingLeft="@dimen/feed_item_status_pad_left_right"
+                android:paddingRight="@dimen/feed_item_status_pad_left_right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/articlefooter"
+                android:maxLines="5"
+                />
+        </RelativeLayout>
+        <simplicity_an.simplicity_an.FeedImageView
+            android:layout_marginTop="5dp"
+            android:id="@+id/feedImage1"
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:visibility="visible" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_below="@+id/feedimg"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <ImageButton android:id="@+id/comment_button"
+
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:src="@drawable/commenttwo"
+            android:gravity="center_horizontal" />
+        <TextView
+            android:id="@+id/comments_count"
+
+            android:layout_marginTop="18dp"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/comment_button"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textSize="14sp" />
+        <ImageButton android:id="@+id/citycenter_main_heartlike"
+
+            android:layout_toRightOf="@+id/comments_count"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/heartcity"
+            android:gravity="center_horizontal" />
+        <TextView
+            android:id="@+id/heartslike_count"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@+id/citycenter_main_heartlike"
+            android:textSize="14sp" />
+        <ImageButton android:id="@+id/imageView_promote"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/citydrop"
+            android:layout_alignParentRight="true"
+            android:gravity="right" />
+        <ImageButton android:id="@+id/city_deletepost"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="40dp"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/deletepost"
+            android:layout_alignParentRight="true"
+            android:gravity="right" />
+        <ImageButton android:id="@+id/city_sharepost"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="70dp"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:src="@mipmap/share"
+            android:layout_alignParentRight="true"
+            android:gravity="right" />
+    </RelativeLayout>
+</LinearLayout>

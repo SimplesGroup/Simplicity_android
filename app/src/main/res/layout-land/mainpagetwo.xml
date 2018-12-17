@@ -1,0 +1,163 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="@color/Black"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="fill_parent">
+    <ScrollView
+        android:scrollbars="none"
+        android:id="@+id/scroll"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+      
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:background="@color/Black"  >
+           <RelativeLayout android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+            <ImageButton android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/close_mainpage"
+                android:background="@android:color/transparent"
+                android:src="@drawable/cross"
+                android:layout_alignParentRight="true"
+                android:visibility="gone"
+                android:layout_marginRight="17dp"
+                android:layout_marginTop="10dp"/>
+           </RelativeLayout>
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:textColor="@color/white"
+                android:textSize="35dp"
+                android:textAlignment="center"
+                android:id="@+id/simplicitynewtitle"
+                />
+            <RelativeLayout android:layout_width="match_parent"
+                android:id="@+id/search"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.SearchView
+                    android:id="@+id/searchview_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true" />
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/footerline"
+                android:visibility="visible"
+                android:orientation="horizontal"
+                android:layout_below="@+id/search"
+                android:layout_above="@+id/tab"
+                >
+                <View
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/gradient"
+                    android:layout_height="1dp"
+                    ></View>
+            </LinearLayout>
+
+            <TableRow   android:id="@+id/tab"
+                android:layout_marginTop="30dp"  android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button android:layout_width="0dp" android:layout_height="100dp" android:background="@drawable/newsnew"  android:id="@+id/imageButton_newsnew"
+                    android:textColor="@color/white" android:gravity="bottom|left" android:paddingLeft="10dp" android:paddingBottom="13dp" android:textSize="15dp" android:layout_weight=".62"/>
+                <Button android:layout_width="0dp" android:layout_height="100dp" android:background="@drawable/articlenew"   android:id="@+id/imageButton_Articlenew"
+                    android:textColor="@color/white" android:textSize="15dp"  android:gravity="bottom|left" android:paddingLeft="6dp" android:paddingBottom="13dp"
+                    android:layout_weight=".38" />
+
+
+            </TableRow>
+            <TableRow   android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <Button android:layout_width="0dp" android:layout_height="100dp" android:background="@drawable/eventsnew"  android:id="@+id/imageButton_eventsnew"
+                    android:textColor="@color/white" android:textSize="15dp" android:layout_weight=".38" android:gravity="bottom|left" android:paddingLeft="10dp" android:paddingBottom="13dp"/>
+                <Button android:layout_width="0dp" android:layout_height="100dp" android:background="@drawable/sportsnew"   android:id="@+id/imageButton_sportsnew"
+                    android:textColor="@color/white" android:textSize="15dp" android:gravity="bottom|left" android:paddingLeft="10dp" android:paddingBottom="13dp"
+                    android:layout_weight=".62"
+                    android:layout_column="15" />
+            </TableRow>
+            <TableRow   android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <Button android:layout_width="0dp" android:layout_height="100dp" android:background="@drawable/govt"  android:id="@+id/imageButton_govtnew"
+                    android:textColor="@color/white" android:textSize="15dp"  android:layout_weight=".50" android:gravity="bottom|left" android:paddingLeft="10dp" android:paddingBottom="13dp"
+                    />
+                <Button android:layout_width="0dp" android:layout_height="100dp" android:background="@drawable/jobsnew"   android:id="@+id/imageButton_jobsnew"
+                    android:textColor="@color/white" android:textSize="15dp" android:gravity="bottom|left" android:paddingLeft="10dp" android:paddingBottom="13dp"
+                    android:layout_weight=".50" />
+            </TableRow>
+            <TableRow   android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <Button android:layout_width="0dp" android:layout_height="100dp" android:background="@drawable/lifestyle"  android:id="@+id/imageButton_citycentrenew"
+                    android:textColor="@color/white" android:textSize="15dp"  android:layout_weight=".50" android:gravity="bottom|left" android:paddingLeft="10dp" android:paddingBottom="13dp"/>
+                <Button android:layout_width="0dp" android:layout_height="100dp" android:background="@drawable/photostory"   android:id="@+id/imageButton_photostories"
+                    android:textColor="@color/white" android:textSize="15dp" android:gravity="bottom|left" android:paddingLeft="10dp" android:paddingBottom="13dp"
+                    android:layout_weight=".50" />
+
+
+            </TableRow>
+            <TableRow   android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <Button android:layout_width="0dp" android:layout_height="100dp" android:background="@drawable/music"  android:id="@+id/imageButton_musicnew"
+                    android:textColor="@color/white" android:textSize="15dp"  android:layout_weight=".33" android:gravity="bottom|left" android:paddingLeft="10dp" android:paddingBottom="13dp"/>
+                <Button android:layout_width="0dp" android:layout_height="100dp" android:background="@drawable/radio"  android:id="@+id/imageButton_radionew"
+                    android:textColor="@color/white" android:textSize="15dp"  android:layout_weight=".33" android:gravity="bottom|left" android:paddingLeft="10dp" android:paddingBottom="13dp"/>
+                <Button android:layout_width="0dp" android:layout_height="100dp" android:background="@drawable/theatre"   android:id="@+id/imageButton_theatrenew"
+                    android:textColor="@color/white" android:textSize="15dp" android:gravity="bottom|left" android:paddingLeft="10dp" android:paddingBottom="13dp"
+                    android:layout_weight=".34" />
+            </TableRow>
+            <TableRow   android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <Button android:layout_width="0dp" android:layout_height="100dp" android:background="@drawable/sciecnce"   android:id="@+id/imageButton_sciencenew"
+                    android:textColor="@color/white" android:textSize="15dp" android:gravity="bottom|left" android:paddingLeft="10dp" android:paddingBottom="13dp"
+                    android:layout_weight=".34" />
+                <Button android:layout_width="0dp" android:layout_height="100dp" android:background="@drawable/educationfinal"   android:id="@+id/imageButton_education"
+                    android:textColor="@color/white" android:textSize="15dp" android:gravity="bottom|left" android:paddingLeft="10dp" android:paddingBottom="13dp"
+                    android:layout_weight=".66" />
+            </TableRow>
+
+
+            <TableRow  android:layout_width="match_parent"
+                android:layout_height="wrap_content"  >
+                <Button android:layout_width="0dp" android:layout_height="100dp" android:background="@drawable/farmingnew"   android:id="@+id/imageButtonone_agriculturenew"
+                    android:textColor="@color/white" android:textSize="15dp" android:gravity="bottom|left" android:paddingLeft="10dp" android:paddingBottom="13dp"
+                    android:layout_weight=".32"
+                    />
+                <Button android:layout_width="0dp" android:layout_height="100dp" android:background="@drawable/healthnew"  android:id="@+id/imageButton_healthynew"
+                    android:textColor="@color/white" android:textSize="13dp" android:layout_weight=".33" android:gravity="bottom|left" android:paddingLeft="10dp" android:paddingBottom="13dp"/>
+                <Button android:layout_width="0dp" android:layout_height="100dp" android:background="@drawable/foodnew"   android:id="@+id/imageButton_foodandcookingnew" android:gravity="bottom|left" android:paddingLeft="10dp" android:paddingBottom="13dp"
+                    android:textColor="@color/white" android:textSize="13dp"
+                    android:layout_weight=".35" />
+
+
+            </TableRow>
+
+            <TableRow   android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <Button android:layout_width="0dp" android:layout_height="100dp" android:background="@drawable/travelsnew"   android:id="@+id/imageButtonone_travelsnew"
+                    android:textColor="@color/white" android:textSize="15dp" android:gravity="bottom|left" android:paddingLeft="10dp" android:paddingBottom="13dp"
+                    android:layout_weight=".66" />
+                <Button android:layout_width="0dp" android:layout_height="100dp" android:background="@drawable/sirectory"  android:id="@+id/imageButton_directorynew" android:gravity="bottom|left" android:paddingLeft="10dp" android:paddingBottom="13dp"
+                    android:textColor="@color/white" android:textSize="15dp" android:layout_weight=".50"/>
+
+            </TableRow>
+
+        </TableLayout>
+      
+    </ScrollView>
+
+
+
+</RelativeLayout>

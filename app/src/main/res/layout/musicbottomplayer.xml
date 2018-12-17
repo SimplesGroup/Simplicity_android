@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="3dp"
+    android:visibility="gone"
+    android:id="@+id/musicfrag"
+    android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/thumbnailone"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight=".80"
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <ImageButton
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/closemusics"
+                    android:background="@android:color/transparent"
+                    android:src="@mipmap/closeblack"
+
+                    android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+
+                android:paddingRight="5dp"
+                android:maxLines="1"
+                android:textSize="12sp"
+                android:textAlignment="center"
+                android:id="@+id/title_musicname"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_below="@+id/title_musicname"
+                android:layout_width="0dp"
+                android:layout_weight=".20"
+              android:layout_marginTop="2dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/play"
+                    android:layout_margin="2dp"
+                    android:background="@android:color/transparent"
+                    android:src="@mipmap/pauseblack"
+                    android:layout_height="match_parent" />
+
+
+
+
+            </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+</LinearLayout>

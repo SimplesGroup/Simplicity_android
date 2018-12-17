@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/citycenterbg"
+    android:id="@+id/main_layout_explore"
+    android:layout_height="match_parent">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:focusable="true" android:focusableInTouchMode="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:id="@+id/city_title"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:textSize="28dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="10dp"
+
+            android:textColor="@android:color/white"
+            android:textSize="17dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/username"
+            android:hint="Name"
+            android:padding="10dp"
+            android:imeOptions="actionNext"
+            android:maxLines="1"
+            android:focusableInTouchMode="false"
+            android:layout_marginTop="10dp"
+            android:textColorHint="#e7e4e4"
+            android:textColor="@android:color/white"
+            android:background="@color/whitegradient"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+
+            android:inputType="number"
+            android:textColorHint="#e7e4e4"
+            android:textColor="@android:color/white"
+            android:background="@color/whitegradient"
+            android:id="@+id/phone"
+            android:hint="Phone number"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:inputType="textCapSentences|textAutoCorrect"
+
+            android:textColorHint="#e7e4e4"
+            android:textColor="@android:color/white"
+            android:background="@color/whitegradient"
+            android:hint="Address Line 1"
+            android:id="@+id/addresslineone"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:inputType="textCapSentences|textAutoCorrect"
+
+            android:textColorHint="#e7e4e4"
+            android:textColor="@android:color/white"
+            android:background="@color/whitegradient"
+            android:id="@+id/addresslinetwo"
+            android:hint="Address Line 2"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/location"
+            android:hint="Location"
+            android:padding="10dp"
+            android:imeOptions="actionNext"
+            android:inputType="textCapSentences|textAutoCorrect"
+            android:maxLines="1"
+            android:layout_marginTop="10dp"
+            android:textColorHint="#e7e4e4"
+            android:textColor="@android:color/white"
+            android:background="@color/whitegradient"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/pincode"
+            android:hint="Pincode"
+            android:padding="10dp"
+            android:imeOptions="actionNext"
+            android:inputType="textCapSentences|textAutoCorrect"
+            android:maxLines="1"
+            android:layout_marginTop="10dp"
+            android:textColorHint="#e7e4e4"
+            android:textColor="@android:color/white"
+            android:background="@color/whitegradient"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/lanmark"
+            android:hint="LandMark"
+
+
+            android:inputType="textCapSentences|textAutoCorrect"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:textColorHint="#e7e4e4"
+            android:textColor="@android:color/white"
+            android:background="@color/whitegradient"
+            android:imeOptions="actionDone"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_margin="5dp"
+                android:text="BACK"
+                android:textColor="@android:color/white"
+                android:id="@+id/back_button_explore"
+                android:background="@color/whitefood"
+                android:textAlignment="center"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="SAVE"
+                android:layout_marginRight="20dp"
+                android:textColor="@android:color/white"
+                android:layout_margin="5dp"
+
+                android:id="@+id/save_button_explore"
+                android:background="@color/whitefood"
+                android:textAlignment="center"
+               />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+
+</RelativeLayout>

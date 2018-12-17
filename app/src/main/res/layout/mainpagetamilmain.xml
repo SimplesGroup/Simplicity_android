@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:focusable="true"
+    android:id="@+id/maintamil"
+    android:focusableInTouchMode="true"
+    tools:context=".MainTamil.MainPageTamil">
+    <RelativeLayout
+        android:layout_above="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+
+            android:id="@+id/frame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:animateLayoutChanges="true">
+
+        </FrameLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+
+            <fragment
+
+                android:layout_alignParentBottom="true"
+                android:name="simplicity_an.simplicity_an.MusicplayerBottom"
+                android:layout_width="match_parent"
+                android:id="@+id/musicbottomplayer"
+                tools:layout="@layout/musicbottomplayer"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+            </fragment>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginBottom="0dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <ImageView android:id="@+id/btn_city_tamil"
+            android:src="@mipmap/cityfooterlogo"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="72dp"
+            />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/footer"
+        android:layout_width="match_parent"
+
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true">
+
+        <Button android:id="@+id/btn_news_tamil"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:background="@android:color/transparent"
+            android:text="News"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+
+            android:textSize="12dp"
+            android:layout_height="42dp"
+            android:layout_centerInParent="true"/>
+
+
+
+        <Button android:id="@+id/btn_events_tamil"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:background="@android:color/transparent"
+            android:text="Events"
+            android:textSize="12dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="42dp"
+            android:layout_centerInParent="true" />
+
+
+
+
+        <ImageView
+            android:background="@android:color/transparent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="45dp"
+            android:layout_centerInParent="true" />
+
+
+
+        <Button android:id="@+id/btn_specials_tamil"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:background="@android:color/transparent"
+            android:text="Specials"
+            android:textSize="12dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="42dp"
+            android:layout_centerInParent="true"
+            />
+
+
+        <Button android:id="@+id/btn_shop_tamil"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:background="@android:color/transparent"
+            android:text="Settings"
+            android:textSize="12dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="42dp"
+            android:layout_centerInParent="true"
+
+            />
+
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#aa000000"
+        android:id="@+id/top_layout">
+        <RelativeLayout
+            android:background="@android:color/black"
+            android:padding="25dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/ivInstruction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:clickable="false"
+                android:minHeight="60dp"
+                android:minWidth="60dp"
+                android:paddingLeft="20dip"
+                android:scaleType="center"
+                android:src="@mipmap/swiperight" />
+            <TextView
+                android:layout_below="@+id/ivInstruction"
+                android:text="Swipe Right for CITY NEWS"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/whitegradient"
+    android:layout_marginBottom="5dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:padding="10dp"
+        android:background="@color/whitegradient"
+        android:paddingLeft="10dp"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/title_horizontal"
+        android:textColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/title_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal"
+        android:id="@+id/horizontal_recylerview"
+        android:layout_width="wrap_content"
+        android:layout_height="210dp">
+    </android.support.v7.widget.RecyclerView>
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/horizontal_recylerview"
+        android:padding="6dp"
+        android:background="@color/whitegradient"
+        android:textAlignment="center"
+        android:id="@+id/seeall_horizontal"
+        android:textColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

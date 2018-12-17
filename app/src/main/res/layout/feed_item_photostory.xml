@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/whitegradient"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/whitegradient"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/feed_item_margin"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/feedImage_photostory"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:drawingCacheQuality="low"
+            android:scaleType="fitXY"
+            android:visibility="visible" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/feedImage_photostory_three_one"
+                    android:layout_width="match_parent"
+                    android:drawingCacheQuality="low"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_height="150dp"
+
+                    android:scaleType="fitXY"
+                    android:visibility="visible" />
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/feedImage_photostory_three_two"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="150dp"
+                    android:layout_margin="5dp"
+                    android:drawingCacheQuality="low"
+                    android:scaleType="fitXY"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/feedImage_photostory_three_three"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="5dp"
+                android:drawingCacheQuality="low"
+                android:scaleType="fitXY"
+                android:visibility="visible" />
+
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/feedImage_photostory_type_two_one"
+                    android:layout_width="match_parent"
+                    android:drawingCacheQuality="low"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_height="300dp"
+
+                    android:scaleType="fitXY"
+                    android:visibility="visible" />
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/feedImage_photostory_type_two_two"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:layout_height="300dp"
+                    android:drawingCacheQuality="low"
+                    android:scaleType="fitXY"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/feedImage_photostory_type_four_one"
+                android:layout_width="match_parent"
+                android:drawingCacheQuality="low"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:layout_height="150dp"
+
+                android:scaleType="fitXY"
+                android:visibility="visible" />
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/feedImage_photostory_type_four_two"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:layout_height="150dp"
+                android:drawingCacheQuality="low"
+                android:scaleType="fitXY"
+                android:visibility="visible" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/feedImage_photostory_type_four_three"
+                android:layout_width="match_parent"
+                android:drawingCacheQuality="low"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:layout_height="150dp"
+
+                android:scaleType="fitXY"
+                android:visibility="visible" />
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/feedImage_photostory_type_four_four"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:layout_height="150dp"
+                android:drawingCacheQuality="low"
+                android:scaleType="fitXY"
+                android:visibility="visible" />
+
+        </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_marginTop="3dp"
+            android:background="@color/whitegradient"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/feed_item_profile_info_padd" >
+
+            <TextView
+                android:id="@+id/title_photo"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="50dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/feed_item_profile_name"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/likes_photo"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="37dp"
+                android:textSize="14dp" />
+
+            <ImageButton android:id="@+id/citycenter_main_heartlike"
+
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="05dp"
+                android:background="@android:color/transparent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/heartcity"
+                android:gravity="center_horizontal" />
+        </RelativeLayout>
+
+
+
+        <TableLayout
+            android:background="@color/whitegradient"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content"    android:focusable="true" android:focusableInTouchMode="true" >
+            <TableRow   android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <Button android:layout_width="0dp"  android:background="#555" android:layout_margin="2dp" android:textAlignment="center" android:layout_height="45dp"  android:id="@+id/photo_comment"
+                    android:textColor="@color/white"  android:textSize="15dp"  android:layout_weight=".34" android:gravity="center" />
+                <Button android:layout_width="0dp" android:background="#555" android:layout_margin="2dp" android:layout_height="45dp"   android:id="@+id/city_sharepost"
+                    android:textColor="@color/white" android:textSize="15dp"  android:layout_weight=".33" android:gravity="center" android:textAlignment="center"/>
+                <Button android:layout_width="0dp" android:background="#555"  android:layout_margin="2dp" android:layout_height="45dp"    android:id="@+id/photo_likes"
+                    android:textColor="@color/white" android:textSize="15dp" android:gravity="center" android:textAlignment="center"
+                    android:layout_weight=".33" />
+            </TableRow>
+        </TableLayout>
+</LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
+
+
+

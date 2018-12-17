@@ -1,0 +1,155 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:background="@drawable/educationbg"
+    android:id="@+id/version_main_layout"
+    android:layout_height="fill_parent"
+    >
+
+    <android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+
+        android:id="@+id/root_coordinator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:contentScrim="?attr/colorPrimary"
+                app:layout_scrollFlags="scroll|enterAlways">
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:background="@color/whitegradient"
+                    android:padding="10dp"
+                    android:layout_height="fill_parent">
+                    <TextView
+                        android:layout_marginTop="40dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"
+                        android:textSize="17sp"
+                        android:id="@+id/titlelabel" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/titlelabel"
+                        android:textAlignment="center"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/white"
+                        android:paddingTop="5dp"
+                        android:id="@+id/education_job_company" />
+                </RelativeLayout>
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_scrollFlags="scroll|enterAlways">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:orientation="horizontal"
+                    android:layout_above="@+id/tab_layout"
+                    >
+                    <View
+                        android:layout_width="fill_parent"
+                        android:background="@android:color/transparent"
+                        android:layout_height="10dp"
+                        ></View>
+                </LinearLayout>
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tab_layout"
+                    android:layout_marginTop="30dp"
+                    app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/whitefood"
+                    app:layout_collapseMode="pin"
+                    app:tabIndicatorColor="@android:color/white"
+                    app:tabSelectedTextColor="@android:color/white"
+                    app:tabTextColor="#EEE" />
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="500dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+
+    <LinearLayout android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="#FF000000"
+
+        android:orientation="horizontal"
+
+
+        android:layout_alignParentBottom="true">
+        <ImageButton android:id="@+id/btn_1"
+            android:layout_marginRight="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/left"
+            android:background="@drawable/buttonselector"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            />
+
+        <ImageButton android:id="@+id/btn_2"
+            android:layout_margin="1dp"
+            android:background="@drawable/buttonselector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/fav"
+            android:gravity="center_horizontal"
+            />
+        <ImageButton android:id="@+id/btn_3"
+            android:layout_margin="1dp"
+
+            android:background="@drawable/buttonselector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+           android:src="@drawable/menutwo"
+            android:gravity="center_horizontal" />
+        <ImageButton android:id="@+id/btn_4"
+            android:layout_margin="1dp"
+            android:background="@drawable/buttonselector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/search"
+            android:gravity="center_horizontal"
+            />
+        <ImageButton android:id="@+id/btn_5"
+            android:layout_margin="1dp"
+            android:background="@drawable/buttonselector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/notify"
+            android:gravity="center_horizontal"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">SimpliCity</string>
+    <string name="queryhintsearchview">Search for anything in Coimbatore</string>
+    <string name="queryhintforshopsearch">Search for products/brands in Coimbatore</string>
+    <string name="facebook_app_id">200693687060449</string>
+
+    <string name="next">NEXT</string>
+    <string name="start">GOT IT</string>
+
+
+    <string name="access_code">Access Code</string>
+
+    <string name="pay_button">Pay</string>
+    <string name="merchant_id">Merchant Id</string>
+    <string name="currency">Currency</string>
+    <string name="amount">Amount</string>
+    <string name="redirect_url">Redirect Url</string>
+    <string name="cancel_url">Cancel Url</string>
+    <string name="rsa_url">RSA Key Url</string>
+    <string name="pay_opt">Payment Option</string>
+
+    <string name="player_error">Error initializing YouTube player: %s</string>
+</resources>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_marginBottom="7dp"
+    android:background="@color/whitefood"
+    tools:context=".Explore.ProductListPage"
+
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.android.volley.toolbox.NetworkImageView
+            android:layout_width="0dp"
+            android:layout_weight=".25"
+            android:id="@+id/explore_productlist_image"
+            android:scaleType="centerCrop"
+            android:layout_height="105dp" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight=".75"
+            android:layout_width="0dp"
+            android:layout_height="105dp">
+            <LinearLayout
+                android:layout_weight=".60"
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="3dp"
+                    android:maxLines="1"
+                    android:id="@+id/explore_productlist_title"
+                    android:textColor="@android:color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                   android:layout_marginTop="12sp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Spinner
+                        android:minWidth="40dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/spinnerborderbox"
+                        android:id="@+id/explore_productlist_spinner_price"
+                        android:layout_width="wrap_content"
+                        android:minHeight="30dp"
+                        android:layout_height="wrap_content" />
+                    <RelativeLayout
+                        android:gravity="right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    <TextView
+
+                        android:layout_alignParentRight="true"
+                        android:textSize="16dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_gravity="right"
+                        android:id="@+id/explore_productlist_price_text"
+                        android:textColor="@android:color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+            <LinearLayout
+                android:layout_weight=".15"
+                android:background="@color/whitefood"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <ImageButton
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/explore_productlist_cartbutton"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/handaddfriend"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                    <ImageButton
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/add_to_favorite"
+                        android:background="@android:color/transparent"
+                        android:src="@mipmap/heartwhite"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="5dp"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+            </LinearLayout>
+            </LinearLayout>
+            </LinearLayout>
+
+
+
+</LinearLayout>

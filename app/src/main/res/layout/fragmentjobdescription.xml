@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="fill_vertical"
+        android:layout_marginBottom="?attr/actionBarSize"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_marginTop="5dip"
+            android:baselineAligned="true"
+            android:orientation="vertical" >
+
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/webView_jobdescription" />
+<LinearLayout
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:minHeight="37dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:textSize="16sp"
+            android:layout_below="@+id/webView_jobdescription"
+            android:layout_alignParentLeft="true"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:padding="7dp"
+            android:layout_margin="5dp"
+            android:background="@color/whitefood"
+            android:id="@+id/jobtype_label"
+            android:text="Job Type "/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".75"
+            android:minHeight="37dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:layout_below="@+id/webView_jobdescription"
+            android:layout_toRightOf="@+id/jobtype_label"
+            android:textColor="@android:color/white"
+            android:layout_margin="5dp"
+            android:padding="7dp"
+            android:background="@color/whitefood"
+            android:id="@+id/jobcategory_label"
+            />
+</LinearLayout>
+            <LinearLayout
+                android:id="@+id/salary_layout"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".25"
+            android:minHeight="37dp"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/jobtype_label"
+            android:layout_alignParentLeft="true"
+            android:textColor="@android:color/white"
+            android:padding="7dp"
+            android:layout_margin="5dp"
+            android:textAlignment="center"
+
+            android:background="@color/whitefood"
+            android:id="@+id/salary_label"
+            android:text="Salary "/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".75"
+            android:minHeight="37dp"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+
+            android:textAlignment="center"
+            android:layout_toRightOf="@+id/salary_label"
+            android:layout_below="@+id/jobcategory_label"
+            android:textColor="@android:color/white"
+            android:padding="7dp"
+            android:layout_margin="5dp"
+
+            android:background="@color/whitefood"
+            android:id="@+id/salary_amount"
+           />
+            </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:minHeight="37dp"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp"
+            android:textAlignment="center"
+            android:layout_below="@+id/salary_layout"
+            android:textColor="@android:color/white"
+            android:layout_margin="5dp"
+            android:padding="7dp"
+            android:background="@color/whitefood"
+            android:id="@+id/candidate_profile"
+            android:text="Desired Candidate Profile "/>
+        <LinearLayout
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:padding="5dp"
+            android:id="@+id/candidate_profiledetails"
+           />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@android:color/white"
+
+                android:padding="5dp"
+                android:id="@+id/candidate_profile_education"
+                />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@android:color/white"
+                android:layout_below="@+id/candidate_profile_education"
+                android:padding="5dp"
+                android:id="@+id/candidate_profile_skillls"
+                />
+            </LinearLayout>
+        <TextView
+            android:layout_width="fill_parent"
+            android:minHeight="40dp"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+
+            android:padding="7dp"
+            android:background="@color/whitefood"
+            android:id="@+id/Walkininterview_label_i"
+            android:text="Walkin Interview "/>
+        <LinearLayout
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+          android:layout_weight=".25"
+            android:textSize="16sp"
+            android:minHeight="37dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:padding="7dp"
+            android:layout_margin="5dp"
+            android:background="@color/whitefood"
+            android:id="@+id/inertviewdate"
+            android:text="Date "/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".75"
+            android:minHeight="37dp"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:layout_margin="5dp"
+            android:padding="7dp"
+            android:background="@color/whitefood"
+            android:id="@+id/inertviewdate_data"
+            />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".25"
+                    android:textSize="16sp"
+                    android:minHeight="37dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:padding="7dp"
+                    android:layout_margin="5dp"
+                    android:background="@color/whitefood"
+                    android:id="@+id/interviewtiming"
+                    android:text="Timing "/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".75"
+                    android:minHeight="37dp"
+                    android:textSize="16sp"
+                    android:layout_height="wrap_content"
+
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:layout_margin="5dp"
+                    android:padding="7dp"
+                    android:background="@color/whitefood"
+                    android:id="@+id/interviewtiming_data"
+                    />
+            </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:minHeight="37dp"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="4dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+
+            android:padding="5dp"
+            android:background="@color/whitefood"
+            android:id="@+id/venue"
+            android:text="Venue "/>
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="11dp"
+            android:layout_below="@+id/venue"
+            android:id="@+id/webView_venuedetails" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/source"
+            android:layout_below="@+id/webView_venuedetails"
+            android:baselineAligned="true"
+            android:orientation="horizontal" >
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@android:color/white"
+            android:id="@+id/emaillabel"
+            android:visibility="gone"
+            android:padding="8dp"
+            android:text="Email this job to yourself or a friend :"/>
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            android:layout_below="@+id/emaillabel"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:hint="Email address"
+            android:background="@color/whitefood"
+            android:imeOptions="actionDone"
+            android:inputType="textImeMultiLine"
+
+            android:minHeight="75dp"
+            android:id="@+id/email"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:visibility="gone"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:background="@color/whitefood"
+            android:layout_below="@+id/emaillabel"
+            android:layout_toRightOf="@+id/email"
+            android:text="Send"/>
+            </RelativeLayout>
+
+</LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_marginBottom="7dp"
+    tools:context=".Explore.WaterListPage"
+    android:background="@color/whitefood"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.android.volley.toolbox.NetworkImageView
+            android:layout_width="0dp"
+            android:layout_weight=".25"
+            android:id="@+id/explore_rentallist_image"
+            android:scaleType="centerCrop"
+            android:layout_height="105dp" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight=".75"
+            android:layout_width="0dp"
+            android:layout_height="105dp">
+            <LinearLayout
+                android:layout_weight=".60"
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="2dp"
+                    android:maxLines="1"
+                    android:id="@+id/explore_rentallist_title"
+                    android:textColor="@android:color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="2dp"
+                    android:maxLines="1"
+                    android:id="@+id/explore_rentallist_date"
+                    android:textColor="@android:color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight=".18"
+                android:background="@color/whitefood"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/explore_rentallist_cartbutton"
+                        android:background="@android:color/transparent"
+
+                        android:textColor="@android:color/white"
+                        android:textAllCaps="false"
+
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center|center_horizontal|center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

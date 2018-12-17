@@ -1,0 +1,160 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:background="@drawable/eventsbg"
+    android:id="@+id/version_main_layout"
+    android:layout_height="fill_parent"
+    >
+
+    <android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/root_coordinator"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:contentScrim="?attr/colorPrimary"
+                app:layout_scrollFlags="scroll|enterAlways">
+                <Spinner
+                    android:layout_marginTop="40dp"
+                    android:id="@+id/my_spinner"
+                    style="@android:style/Widget.Spinner.DropDown"
+                    android:popupBackground="@drawable/eventsbg"
+                    android:background="@android:color/transparent"
+                    android:dropDownVerticalOffset="56dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+
+                    android:spinnerMode="dropdown"
+                    android:layout_gravity="center"
+                    />
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                app:layout_scrollFlags="scroll|enterAlways">
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tab_layout"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:tabMode="scrollable"
+                    app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+                    app:tabGravity="fill"
+                    app:layout_collapseMode="pin"
+                    app:tabIndicatorColor="@android:color/white"
+                    app:tabSelectedTextColor="@android:color/white"
+                    app:tabTextColor="#EEE" />
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+    <LinearLayout android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="62dp"
+        android:background="#FF000000"
+
+        android:orientation="horizontal"
+
+
+        android:layout_alignParentBottom="true">
+        <ImageButton android:id="@+id/btn_eventback"
+            android:layout_marginRight="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:src="@mipmap/news"
+            android:background="@drawable/buttonselector"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            />
+
+        <ImageButton android:id="@+id/btn_eventfav"
+            android:layout_margin="1dp"
+            android:background="@drawable/buttonselector"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/events"
+            android:gravity="center_horizontal"
+            />
+        <ImageButton android:id="@+id/btn_eventhome"
+            android:layout_margin="1dp"
+
+            android:background="@drawable/buttonselector"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/search"
+            android:gravity="center_horizontal" />
+        <ImageButton android:id="@+id/btn_eventsearch"
+            android:layout_margin="1dp"
+            android:background="@drawable/buttonselector"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/specials"
+            android:gravity="center_horizontal"
+            />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content">
+        <ImageButton android:id="@+id/btn_eventprofile"
+            android:layout_margin="1dp"
+            android:background="@drawable/buttonselector"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/more"
+            android:gravity="center_horizontal"
+            />
+            <TextView
+                android:id="@+id/text_batchvalue_main"
+                android:minWidth="20dp"
+                android:minHeight="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_alignTop="@id/btn_eventprofile"
+                android:layout_centerInParent="true"
+                android:layout_alignRight="@id/btn_eventprofile"
+                android:background="@drawable/batgetext"
+                android:gravity="center"
+                android:shadowColor="@android:color/white"
+                android:shadowRadius="10.0"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
