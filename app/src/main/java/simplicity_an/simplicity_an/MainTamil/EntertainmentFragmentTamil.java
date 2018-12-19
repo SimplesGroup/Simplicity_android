@@ -82,7 +82,7 @@ public class EntertainmentFragmentTamil extends Fragment  {
     String urlpost="http://simpli-city.in/request2.php?key=simples&rtype=user_history";
     public static final String mypreference = "mypref";
     public static final String MYUSERID= "myprofileid";
-    String WEATHER_URL="http://simpli-city.in/request2.php?rtype=weather&key=simples";
+    String WEATHER_URL="https://simplicity.in/request2.php?rtype=weather&key=simples";
     String url_noti_count="http://simpli-city.in/request2.php?rtype=notificationcount&key=simples&user_id=";
     String url_notification_count_valueget,myprofileid,weather_degree_value,notification_counts;
     int value;
